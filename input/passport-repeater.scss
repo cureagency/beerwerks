@@ -1,0 +1,103 @@
+.passport-repeater-wrap-bg {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0;
+	position: relative;
+}
+.passport-red-bg {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 35%;
+	display: block;
+	position: absolute;
+	background-color: $red;
+}
+.passport-yellow-line-bg {
+	right: 30%;
+	top: 250px;
+	bottom: 250px;
+	border-right: 5px dotted $gold;
+	display: block;
+	position: absolute;
+}
+.passport-repeater-wrap {
+	max-width: 1200px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+.passport-repeater {
+	display: flex;
+	flex-flow: row;
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px 0;
+}
+.passport-repeater-image {
+	width: 50%;
+	height: 500px;
+}
+.passport-repeater-text {
+	width: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.passport-repeater-text-wrap {
+	align-self: center;
+	padding: 50px 0 50px 50px;
+	background-color: white;
+}
+
+.passport-repeater-number-wrap {
+	position: absolute;
+	top: 50px;
+	right: 47%;
+	padding: 5px;
+	border: 2px solid $gold;
+	border-radius: 50%;
+	background-color: white;
+	.passport-repeater-number {
+		background-color: $gold;
+		border-radius: 50%;
+		height: 75px;
+		width: 75px;
+		p {
+			width: 100%;
+			color: white;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			line-height: 75px;
+			font-size: 25px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.passport-repeater-wrap-bg {
+		padding: 50px 0;
+	}
+	.passport-repeater-wrap {
+		padding: 0 20px;
+	}
+	.passport-repeater {
+		flex-flow: column;
+	}
+	.passport-repeater-image {
+		width: 100%;
+		height: 500px;
+	}
+	.passport-repeater-text {
+		width: 100%;
+		display: block;
+	}
+	.passport-repeater-text-wrap {
+		text-align: center;
+		padding: 20px;
+	}
+	.passport-repeater-number-wrap {
+		right: 50%;
+	}
+}

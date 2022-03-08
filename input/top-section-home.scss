@@ -1,0 +1,136 @@
+
+.top-section-home {
+	background-color: $dark-gray;
+	display: flex;
+	flex-flow: row;
+	align-items: stretch;
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+.top-section-home-left {
+	width: 50%;
+}
+.top-section-home-right {
+	width: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.top-section-home-right-text {
+	padding: 100px 0 0 100px;
+	max-width: 500px;
+	position: absolute;
+	left: 0;
+}
+
+.top-stamps {
+	max-width: 200px;
+	position: absolute;
+	top: 150px;
+	right: -15px;
+	z-index: 2000;
+}
+
+.top-text-band {
+	width: 100%;
+	position: absolute;
+	bottom: -75px;
+	right: -35px;
+	left: -35px;
+	z-index: 2000;
+}
+
+.top-section-home-second {
+	background-color: #191919;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding: 100px;
+	box-sizing: border-box;
+}
+
+.top-section-home-second-text {
+	padding: 100px;
+}
+
+.stamps-left {
+	max-width: 300px;
+	position: absolute;
+	top: 100px;
+	left: -75px;
+	z-index: 2500;
+}
+
+.stamps-right {
+	max-width: 300px;
+	position: absolute;
+	top: 100px;
+	right: -75px;
+	z-index: 2000;
+}
+
+@media only screen and (max-width: 1000px) {
+	.top-section-home {
+		flex-flow: column;
+		height: auto;
+		width: 100%;
+	}
+	.top-section-home-left {
+		width: 100%;
+		height: 500px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		box-sizing: border-box;
+	}
+	.top-section-home-right {
+		width: 100%;
+		height: auto;
+		position: relative;
+		box-sizing: border-box;
+		display: block;
+	}
+
+	.top-section-home-right-text {
+		align-self: center;
+		position: relative;
+		padding: 50px;
+	}
+
+	.top-stamps {
+		max-width: 100px;
+		position: absolute;
+		top: 100px;
+		right: -15px;
+	}
+
+	.top-text-band {
+		width: 100%;
+		position: absolute;
+		bottom: -75px;
+		right: -35px;
+		left: -35px;
+		z-index: 2000;
+	}	
+}
+@media only screen and (max-width: 800px) {
+	.top-text-band {
+		display: none;
+	}
+	.top-section-home-second {
+		padding: 0 5% 50px;
+	}
+	.stamps-left {
+	   display: none;
+	 }
+	.stamps-right {
+	    display: none;
+	 }
+	 .top-section-home-second-text {
+		padding: 0;
+	}
+}

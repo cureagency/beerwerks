@@ -1,0 +1,115 @@
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	a {
+		font-weight: 700;
+		color: $gold;
+		&:hover {
+			color: $gold;
+			opacity: 0.6;
+		}
+	}
+}
+
+a {
+	font-weight: 700;
+	color: $gold;
+	&:hover {
+		color: $gold;
+		opacity: 0.6;
+	}
+	&:visited {
+		font-weight: 700;
+		color: $gold;
+	}
+}
+
+ul li {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+h1 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 72px;
+	margin: 0 0 .5em;
+	line-height: 1.05em;
+}
+
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 50px;
+	letter-spacing: 1px;
+	margin: 0 0 .5em 0;
+	text-transform: capitalize;
+	line-height: 1.25em;
+	font-weight: 200;
+}
+
+h3 {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin: .5em 0;
+}
+
+h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: .5em 0;
+	line-height: 1.25em;
+}
+
+blockquote {
+	margin: 0;
+	p {
+		color: $gold;
+		font-weight: 700;
+		padding: 10px 0 10px 35px;
+		border-left: 15px solid $gold;
+	}
+}
+
+ul {
+	margin: 0;
+	color: $gold;
+	li{
+		color: $gold;
+		font-weight: 700;
+		margin: 10px 0;
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-family: 'Bebas Neue', cursive;
+		font-size: 28px;
+		margin: .5em 0;
+	}
+
+	h3 {
+		font-family: 'Barlow Condensed', sans-serif;
+		font-size: 30px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		margin: .5em 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	h1 {
+		font-size: 25px;
+	}
+}

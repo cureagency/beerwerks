@@ -1,0 +1,105 @@
+a.whitebutton {
+	background-color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px 50px;
+	border: 1px solid white;
+	display: inline-block;
+	color: $gold;
+	transition: all 1s;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+}
+
+a.whitebutton:hover {
+	background-color: transparent;
+	color: white;
+}
+
+a.yellowbutton {
+	background-color: $gold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px 50px;
+	border: 1px solid $gold;
+	display: inline-block;
+	color: white;
+	transition: all 1s;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+}
+
+a.yellowbutton:hover {
+	border: 1px solid white;
+	color: white !important;
+}
+
+a.redbutton {
+	background-color: $red;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px 50px;
+	border: 1px solid $red;
+	display: inline-block;
+	color: white;
+	transition: all 1s;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+}
+
+a.redbutton:hover {
+	border: 1px solid white;
+}
+
+a.gold-button-nobg {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px 50px;
+	display: inline-block;
+	color: $gold;
+	transition: all 1s;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+	border: 1px solid transparent;
+}
+
+a.gold-button-nobg:hover {
+	border: 1px solid $gold;
+}
+
+a.borderbutton-white {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 20px 50px;
+	display: inline-block;
+	color: white;
+	transition: all 1s;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+	border: 1px solid transparent;
+}
+
+a.borderbutton-white:hover {
+	border: 1px solid white;
+}
+
+.smallbutton {
+	padding: 10px 25px !important;
+	border-radius: 0 !important;
+	border: none !important;
+}

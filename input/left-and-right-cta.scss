@@ -1,0 +1,89 @@
+.single-brewery-events-block {
+	min-height: 300px;
+	max-width: 1420px;
+	padding: 0 50px;
+	margin: 50px auto;
+	display: flex; 
+	flex-flow: row; 
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.single-brewery-events-block-left {
+	background-color: $dark-gray;
+	width: 45%;
+	box-sizing: border-box;
+	padding: 100px 50px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center right;
+	position: relative;
+	z-index: 2000;
+}
+
+.single-brewery-events-block-left-rip {
+	position: absolute;
+	right: 100%;
+	top: 0;
+	bottom: 0;
+	max-width: 200px;
+}
+
+.single-brewery-events-block-right-rip {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	bottom: 0;
+	max-width: 200px;	
+}
+.single-brewery-events-block-left h2{
+	color: white;
+}
+.single-brewery-events-block-left p{
+	color: white;
+}
+.single-brewery-events-block-right {
+	width: 55%;
+	box-sizing: border-box;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.single-brewery-events-block-left-stamp {
+	position: absolute;
+	bottom: 20%;
+	left: 110%;
+	width: 100px;
+}
+@media only screen and (max-width: 1000px) {
+	.single-brewery-events-block {
+		flex-flow: column; 
+	}
+	.single-brewery-events-block-left {
+		width: 100%;
+	}
+	.single-brewery-events-block-right {
+		width: 100%;
+		min-height: 300px;
+	}
+	.single-brewery-events-block-left-stamp {
+		display: none;
+	}
+	.single-brewery-events-block {
+		padding: 0;
+		margin: 0;
+	}
+	#right-block.single-brewery-events-block {
+		flex-flow: column-reverse;
+	}
+	.single-brewery-events-block-left-rip {
+		display: none;	
+	}
+	.single-brewery-events-block-right-rip {
+		display: none;	
+	}
+}

@@ -1,0 +1,114 @@
+.visit-band {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #BD8429;	
+	z-index: 2000;
+	margin-bottom: -100px;
+	position: relative;
+	padding: 50px 150px;
+	display: flex;
+	flex-flow: row;
+	.gform_body.gform-body {
+		width: 75%;
+		display: inline-block;
+		#input_4_1 {
+			width: 100%;
+			height: 50px;
+		}
+		.gfield_label {
+			display: none;
+		}
+	}
+	.gform_footer.top_label {
+		width: 24%;
+		display: inline-block;
+		#gform_submit_button_4 {
+			width: 100%;
+			background-color: $red;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 20px;
+			text-decoration: none;
+			border: 1px solid $red;
+			display: inline-block;
+			color: white;
+			transition: all 1s;
+			text-transform: uppercase;
+			height: 50px;
+			line-height: 25px;
+			border-radius: 0 !important;
+			&:hover {
+				border: 1px solid white;
+			}
+		}
+	}
+}
+.visit-band-wrapper {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+	max-width: 1545px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.badges-left {
+	bottom: -100px;
+	left: -15px;
+	position: absolute;
+	height: 200px;
+}
+.badges-right {
+	top: -50px;
+	right: -35px;
+	position: absolute;
+	height: 150px;
+	text-align: right;
+}
+.visit-band-left {
+	width: 60%;
+}
+.visit-band-left h2{
+	color: white;
+	text-transform: capitalize;
+}
+.visit-band-left p{
+	color: white;
+}
+
+.visit-band-right {
+	width: 40%;
+	text-align: right;
+}
+@media only screen and (max-width: 1000px) {
+	.visit-band {
+		padding: 120px 25px;
+		display: flex;
+		flex-flow: column;
+	}
+	.visit-band-wrapper {
+		flex-flow: column;
+	}
+	.visit-band-left {
+		width: 100%;
+		text-align: center;
+	}
+	.visit-band-right {
+		width: 100%;
+		text-align: center;
+	}
+	.visit-band-right p {
+		text-align: center !important;
+	}
+	.badges-left {
+		bottom: -100px;
+		left: -15px;
+		position: absolute;
+		height: 200px;
+	}
+	.badges-right {
+		top: -50px;
+		right: -35px;
+		position: absolute;
+		height: 150px;
+		text-align: right;
+	}
+}

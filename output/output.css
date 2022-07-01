@@ -186,11 +186,11 @@ ul li {
     margin: 0.5em 0;
   }
   h3 {
-    font-family: "Barlow Condensed", sans-serif;
     font-size: 30px;
     letter-spacing: 4px;
-    text-transform: uppercase;
     margin: 0.5em 0;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: none;
   }
 }
 @media only screen and (max-width: 800px) {

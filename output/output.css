@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: Cure
 Author URI: curedesign.co
@@ -141,11 +140,11 @@ h2 {
 }
 
 h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 52px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 45px;
   font-weight: 200;
-  text-transform: uppercase;
-  margin: 0.5em 0;
+  text-transform: none;
+  margin: 0 0 0.5em 0;
 }
 
 h4 {
@@ -181,13 +180,11 @@ ul li {
   h1 {
     font-size: 50px;
   }
-
   h2 {
     font-family: "Bebas Neue", cursive;
     font-size: 28px;
     margin: 0.5em 0;
   }
-
   h3 {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 30px;
@@ -395,30 +392,24 @@ a.borderbutton-white:hover {
   .passport-repeater-wrap-bg {
     padding: 50px 0;
   }
-
   .passport-repeater-wrap {
     padding: 0 20px;
   }
-
   .passport-repeater {
     flex-flow: column;
   }
-
   .passport-repeater-image {
     width: 100%;
     height: 500px;
   }
-
   .passport-repeater-text {
     width: 100%;
     display: block;
   }
-
   .passport-repeater-text-wrap {
     text-align: center;
     padding: 20px;
   }
-
   .passport-repeater-number-wrap {
     right: 50%;
   }
@@ -505,7 +496,6 @@ a.borderbutton-white:hover {
     height: auto;
     width: 100%;
   }
-
   .top-section-home-left {
     width: 100%;
     height: 500px;
@@ -514,7 +504,6 @@ a.borderbutton-white:hover {
     background-repeat: no-repeat;
     box-sizing: border-box;
   }
-
   .top-section-home-right {
     width: 100%;
     height: auto;
@@ -522,20 +511,17 @@ a.borderbutton-white:hover {
     box-sizing: border-box;
     display: block;
   }
-
   .top-section-home-right-text {
     align-self: center;
     position: relative;
     padding: 50px;
   }
-
   .top-stamps {
     max-width: 100px;
     position: absolute;
     top: 100px;
     right: -15px;
   }
-
   .top-text-band {
     width: 100%;
     position: absolute;
@@ -549,19 +535,15 @@ a.borderbutton-white:hover {
   .top-text-band {
     display: none;
   }
-
   .top-section-home-second {
     padding: 0 5% 50px;
   }
-
   .stamps-left {
     display: none;
   }
-
   .stamps-right {
     display: none;
   }
-
   .top-section-home-second-text {
     padding: 0;
   }
@@ -641,33 +623,26 @@ a.borderbutton-white:hover {
   .single-brewery-events-block {
     flex-flow: column;
   }
-
   .single-brewery-events-block-left {
     width: 100%;
   }
-
   .single-brewery-events-block-right {
     width: 100%;
     min-height: 300px;
   }
-
   .single-brewery-events-block-left-stamp {
     display: none;
   }
-
   .single-brewery-events-block {
     padding: 0;
     margin: 0;
   }
-
   #right-block.single-brewery-events-block {
     flex-flow: column-reverse;
   }
-
   .single-brewery-events-block-left-rip {
     display: none;
   }
-
   .single-brewery-events-block-right-rip {
     display: none;
   }
@@ -721,7 +696,6 @@ a.borderbutton-white:hover {
     min-height: auto;
     padding: 100px 0 250px;
   }
-
   .map-brewery-top-wrap {
     display: flex;
     flex-flow: row;
@@ -733,7 +707,6 @@ a.borderbutton-white:hover {
     margin: 0 auto;
     box-sizing: border-box;
   }
-
   .map-brewery-top-text {
     width: 50%;
     padding-right: 10%;
@@ -741,7 +714,6 @@ a.borderbutton-white:hover {
     position: relative;
     box-sizing: border-box;
   }
-
   .map-brewery-top-map {
     width: 50%;
     height: 100%;
@@ -757,17 +729,14 @@ a.borderbutton-white:hover {
     min-height: auto;
     padding: 50px 0 50px;
   }
-
   .map-brewery-top-wrap {
     flex-flow: column;
     padding: 0 2%;
   }
-
   .map-brewery-top-text {
     width: 100%;
     padding: 0;
   }
-
   .map-brewery-top-map {
     width: 100%;
     padding: 0;
@@ -882,15 +851,12 @@ p.brewery-list-card-location {
   .map-brewery-list-wrap {
     margin: 0 auto 50px;
   }
-
   .map-brewery-list-text {
     padding: 50px 5% 25px;
   }
-
   .map-brewery-list-list {
     padding: 0 5% 50px;
   }
-
   .brewery-list-card {
     width: 48%;
     min-height: 200px;
@@ -986,23 +952,19 @@ p.brewery-list-card-location {
     min-height: 400px;
     border-right: 2px solid white;
   }
-
   .image-row-cta-block-2 {
     width: 40%;
     border-right: none;
     border-right: 2px solid white;
   }
-
   .image-row-cta-block-3 {
     width: 30%;
     border-right: none;
     min-height: 400px;
   }
-
   .image-row-cta-block-4 {
     display: none;
   }
-
   .image-row-cta-bottom-block {
     display: flex;
     width: 100%;
@@ -1012,21 +974,17 @@ p.brewery-list-card-location {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
   }
-
   .image-row-cta-block-5 {
     width: 50%;
     border-right: 2px solid white;
   }
-
   .image-row-cta-block-6 {
     width: 50%;
     border-right: none;
   }
-
   .image-row-cta-block-7 {
     display: none;
   }
-
   .image-row-cta-block-8 {
     display: none;
   }
@@ -1036,20 +994,16 @@ p.brewery-list-card-location {
     flex-flow: column;
     min-height: 0;
   }
-
   .image-row-cta-block-1 {
     display: none;
   }
-
   .image-row-cta-block-2 {
     width: 100%;
     border-right: none;
   }
-
   .image-row-cta-block-3 {
     display: none;
   }
-
   .image-row-cta-block-4 {
     display: none;
   }
@@ -1322,13 +1276,13 @@ body {
 .slick-prev:before {
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 50px !important;
-  content: "" !important;
+  content: "\f053" !important;
 }
 
 .slick-next:before {
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 50px !important;
-  content: "" !important;
+  content: "\f054" !important;
 }
 
 .slick-dots {
@@ -1348,7 +1302,7 @@ body {
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 10px !important;
   font-weight: 900 !important;
-  content: "" !important;
+  content: "\f111" !important;
 }
 
 .slick-dots li:slick-active button:before {
@@ -1356,7 +1310,7 @@ body {
   font-family: "Font Awesome 5 Pro" !important;
   font-size: 10px !important;
   font-weight: 900 !important;
-  content: "" !important;
+  content: "\f111" !important;
 }
 
 .slick-prev {
@@ -1818,32 +1772,26 @@ a .arrow-down {
     display: flex;
     flex-flow: column;
   }
-
   .visit-band-wrapper {
     flex-flow: column;
   }
-
   .visit-band-left {
     width: 100%;
     text-align: center;
   }
-
   .visit-band-right {
     width: 100%;
     text-align: center;
   }
-
   .visit-band-right p {
     text-align: center !important;
   }
-
   .badges-left {
     bottom: -100px;
     left: -15px;
     position: absolute;
     height: 200px;
   }
-
   .badges-right {
     top: -50px;
     right: -35px;
@@ -1851,24 +1799,20 @@ a .arrow-down {
     height: 150px;
     text-align: right;
   }
-
   .image-grid {
     flex-flow: column;
     height: auto;
     border: none;
   }
-
   .image-grid-1 {
     background-color: black;
     border-bottom: 1px solid white;
     width: 100%;
     height: 250px;
   }
-
   .image-grid-column {
     display: none;
   }
-
   .brewery-list-manual {
     display: flex;
     flex-flow: row;
@@ -1877,85 +1821,68 @@ a .arrow-down {
     padding: 25px;
     justify-content: space-between;
   }
-
   .brewery-list-label {
     width: 23%;
     box-sizing: border-box;
     padding: 15px 0;
     border-bottom: 2px solid #AFAFAF;
   }
-
   .single-brewery-top {
     min-height: none;
     display: flex;
     flex-flow: column;
   }
-
   .single-brewery-top-left {
     width: 100%;
     min-height: 90vh;
     padding: 150px 20px 50px;
   }
-
   .single-brewery-top-left-text {
     padding: 50px;
   }
-
   .single-brewery-top-right {
     width: 100%;
     padding: 50px;
   }
-
   .fourcolumn {
     flex-flow: column;
   }
-
   .cure-2021-footer {
     flex-flow: column;
   }
-
   .footerbanner {
     flex-flow: column;
   }
-
   .bannercolumn-text {
     width: 100%;
   }
-
   .bannercolumn-img {
     width: 100%;
     box-sizing: border-box;
   }
-
   .bannercolumn-img img {
     width: 75%;
     box-sizing: border-box;
     margin-top: 0;
   }
-
   .twocolumn {
     flex-flow: column;
   }
-
   .singlecolumn {
     padding: 50px 5% 50px;
   }
-
   .arrow-down {
     height: 70px;
     width: 70px;
     line-height: 80px;
     font-size: 30px;
   }
-
   .beerwerksslider-container {
     display: none;
   }
-
   .topsection {
     padding: 100px 10% 150px;
   }
-
   .topsection-noimage {
     width: 100%;
     max-width: 1545px;
@@ -1966,44 +1893,35 @@ a .arrow-down {
     color: white;
     border-radius: 20px;
   }
-
   .topsection-img-mobile {
     width: 100%;
     height: auto;
     margin-top: -150px;
     display: block;
   }
-
   .topsection-img-desktop {
     display: none;
   }
-
   .fullwidth-img-mobile {
     width: 100%;
     height: auto;
     display: block;
   }
-
   .fullwidth-img-desktop {
     display: none;
   }
-
   .brewerycards-wrapper {
     flex-flow: column;
   }
-
   .brewerycards-description-col {
     width: 100%;
   }
-
   .brewerycards-card-col {
     width: 100%;
   }
-
   .brewerycard-row {
     flex-flow: column;
   }
-
   .brewerycard {
     padding: 0 5px 10px;
     width: 100%;
@@ -2013,7 +1931,6 @@ a .arrow-down {
   .menu-float {
     position: relative;
   }
-
   .twocolumn-wrap {
     padding: 0 20px;
     margin: 50px 0;
@@ -2079,33 +1996,27 @@ a .arrow-down {
   .top-section-standard {
     height: auto;
   }
-
   .standard-badge {
     position: absolute;
     max-width: 150px;
     bottom: -50px;
     right: -20px;
   }
-
   .left {
     flex-flow: column;
   }
-
   .right {
     flex-flow: column;
   }
-
   .top-section-standard-left {
     width: 100%;
     height: 500px;
   }
-
   .top-section-standard-right {
     width: 100%;
     height: auto;
     display: block;
   }
-
   .top-section-standard-right-text {
     align-self: center;
     padding: 50px;
@@ -2385,77 +2296,63 @@ a.blog-link:hover {
     flex-flow: column;
     padding: 50px 20% 0;
   }
-
   .blog-cta-title {
     width: 100%;
     text-align: center;
   }
-
   .blog-cta-title h2 {
     margin: 0;
   }
-
   .blog-cta-button {
     width: 100%;
   }
-
   .blog-cta-button p {
     text-align: center;
     margin: 0;
   }
-
   .blog-cta-pull {
     flex-flow: column;
     align-items: stretch;
     margin: 0 auto;
     padding: 50px 20px;
   }
-
   .blog-cta-left {
     width: 100%;
     padding: 0 20%;
     box-sizing: border-box;
   }
-
   .blog-cta-right {
     width: 100%;
     padding: 0 20%;
     box-sizing: border-box;
   }
-
   .blog-cta-left-card {
     flex-flow: column;
     width: 100%;
     height: 100%;
     margin-bottom: 25px;
   }
-
   .blog-cta-left-card-image {
     width: 100%;
     min-height: 200px;
   }
-
   .blog-cta-left-card-text {
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
   }
-
   .blog-cta-right-card {
     flex-flow: column;
     height: 100%;
   }
-
   .blog-cta-right-card-image {
     width: 100%;
     min-height: 300px;
   }
-
   .blog-cta-right-card-text {
     width: 100%;
     padding: 25px;
   }
-
   p.blog-date {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
@@ -2464,7 +2361,6 @@ a.blog-link:hover {
     line-height: 1.05em;
     color: #D08E30 !important;
   }
-
   p.blog-title {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: capitalize;
@@ -2473,14 +2369,12 @@ a.blog-link:hover {
     line-height: 1.05em;
     color: black !important;
   }
-
   p.blog-paragraph {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: black !important;
   }
-
   a.blog-link {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
@@ -2496,75 +2390,61 @@ a.blog-link:hover {
     flex-flow: column;
     padding: 50px 0 0;
   }
-
   .blog-cta-title {
     width: 100%;
     text-align: center;
   }
-
   .blog-cta-title h2 {
     margin: 0;
   }
-
   .blog-cta-button {
     width: 100%;
   }
-
   .blog-cta-button p {
     text-align: center;
     margin: 0;
   }
-
   .blog-cta-pull {
     flex-flow: column;
     align-items: stretch;
     margin: 0 auto;
     padding: 50px 20px;
   }
-
   .blog-cta-left {
     width: 100%;
     padding: 0;
   }
-
   .blog-cta-right {
     width: 100%;
     padding: 0;
   }
-
   .blog-cta-left-card {
     flex-flow: column;
     width: 100%;
     height: 100%;
     margin-bottom: 25px;
   }
-
   .blog-cta-left-card-image {
     width: 100%;
     min-height: 200px;
   }
-
   .blog-cta-left-card-text {
     width: 100%;
     padding: 25px;
     box-sizing: border-box;
   }
-
   .blog-cta-right-card {
     flex-flow: column;
     height: 100%;
   }
-
   .blog-cta-right-card-image {
     width: 100%;
     min-height: 300px;
   }
-
   .blog-cta-right-card-text {
     width: 100%;
     padding: 25px;
   }
-
   p.blog-date {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
@@ -2573,7 +2453,6 @@ a.blog-link:hover {
     line-height: 1.05em;
     color: #D08E30 !important;
   }
-
   p.blog-title {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: capitalize;
@@ -2582,14 +2461,12 @@ a.blog-link:hover {
     line-height: 1.05em;
     color: black !important;
   }
-
   p.blog-paragraph {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: black !important;
   }
-
   a.blog-link {
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase;
@@ -2704,32 +2581,26 @@ a.blog-link:hover {
     display: flex;
     flex-flow: column;
   }
-
   .visit-band-wrapper {
     flex-flow: column;
   }
-
   .visit-band-left {
     width: 100%;
     text-align: center;
   }
-
   .visit-band-right {
     width: 100%;
     text-align: center;
   }
-
   .visit-band-right p {
     text-align: center !important;
   }
-
   .badges-left {
     bottom: -100px;
     left: -15px;
     position: absolute;
     height: 200px;
   }
-
   .badges-right {
     top: -50px;
     right: -35px;

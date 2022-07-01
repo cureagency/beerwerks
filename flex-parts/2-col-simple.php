@@ -1,4 +1,4 @@
-<div class="container large-bottom-padding large-top-padding light-gray-top-bottom-border" id="<?php get_sub_field('anchor_tag');?>">
+<div class="container large-bottom-padding large-top-padding light-gray-top-bottom-border" id="<?php the_sub_field('anchor_tag');?>">
 	<div class="row">
 		<div class="col-lg-8">
 			<h2><?php the_sub_field('header'); ?></h2>

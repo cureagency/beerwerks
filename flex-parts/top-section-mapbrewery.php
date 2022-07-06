@@ -29,11 +29,11 @@
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'meta_key' => 'city', 'orderby'=>'meta_value', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
-					$city = get_field('city');
+					$city = the_field('city');
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  		<div class="brewery-list-card">
-						  <?php if ($city): 'Elkton' ?>
+						  <?php if ($city['Elkton']): ?>
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
 								$thumb_id = get_post_thumbnail_id();

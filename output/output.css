@@ -2008,6 +2008,9 @@ a .arrow-down {
   .left {
     flex-flow: column;
   }
+  .left .top-section-standard-right-text {
+    padding: 50px;
+  }
   .right {
     flex-flow: column;
   }

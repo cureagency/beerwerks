@@ -29,7 +29,7 @@
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'meta_key' => 'city', 'orderby'=>'meta_value', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
-					$city = the_field('city');
+					$city = get_field('city');
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  		<div class="brewery-list-card">

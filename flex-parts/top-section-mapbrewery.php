@@ -32,7 +32,6 @@
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); 
 				  ?>
-					<div class="brewery-list-location">
 						<h2 class="brewery-city-header"><?php the_field('city');?></h2>				
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
@@ -55,7 +54,6 @@
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
 						</div>
-					</div>
 				  <?php 
 				  endwhile;
 				  wp_reset_postdata();

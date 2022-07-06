@@ -182,6 +182,7 @@ ul li {
   }
   h2 {
     font-family: "Open Sans Condensed", sans-serif;
+    text-transform: capitalize;
     font-size: 28px;
     margin: 0.5em 0;
   }

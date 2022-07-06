@@ -33,7 +33,6 @@
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  		<div class="brewery-list-card">
-						  <?php if ($city['Elkton']): ?>
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
 								$thumb_id = get_post_thumbnail_id();
@@ -53,7 +52,6 @@
 							<div class="brewery-list-card-link">
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
-							<?php endif; ?>
 						</div>
 				  <?php 
 				  endwhile;

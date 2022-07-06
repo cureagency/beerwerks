@@ -27,7 +27,7 @@
 				</div>	
 				<div class="map-brewery-list-list">
 				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
+				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'meta_key' => 'city', 'orderby'=>'meta_value', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); 

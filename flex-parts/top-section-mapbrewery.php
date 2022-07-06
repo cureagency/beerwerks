@@ -32,7 +32,6 @@
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); 
 				  ?>
-						<h2 class="brewery-city-header"><?php the_field('city');?></h2>				
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   

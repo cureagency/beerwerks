@@ -33,7 +33,7 @@
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); 
 				  ?>
 					<div class="brewery-list-location">
-						<h2 class="brewery-list-card-location"><<?php the_field('city');?></h2>				
+						<h2 class="brewery-list-card-location"><?php the_field('city');?></h2>				
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   

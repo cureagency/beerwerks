@@ -29,9 +29,9 @@
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'meta_key' => 'city', 'orderby'=>'meta_value', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
-					$city = the_field('city');
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
+				  	<?php if (get_field('city') == 'Elkton'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -53,6 +53,7 @@
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
 						</div>
+						<?php endif; ?>	
 				  <?php 
 				  endwhile;
 				  wp_reset_postdata();

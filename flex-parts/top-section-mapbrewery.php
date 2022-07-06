@@ -224,7 +224,7 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'RAPHINE'): ?>
+				  <?php if (get_field('city') == 'Raphine'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   

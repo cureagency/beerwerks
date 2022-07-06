@@ -27,9 +27,11 @@
 				</div>	
 				<div class="map-brewery-list-list">
 				 <?php 
-				  $the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
+				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
+					$loop = new WP_Query( $args);
 				  ?>
-				  <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+				  <?php while ($loop -> have_posts()) : $loop -> the_post(); 
+				  ?>
 
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">

@@ -119,7 +119,7 @@
 //   	align-items: stretch;
 // }
 .map-brewery-list-list {
-	padding: 10px;
+	padding-left: 5%;
 	box-sizing: border-box;
 	width: 100%;
 	display: flex;
@@ -127,7 +127,7 @@
   	align-items: stretch;
 }
 .brewery-heading{
-	padding: 10%;
+	padding-left: 5%;
 }
 .brewery-list-card {
 	width: 18%;
@@ -136,6 +136,7 @@
 	background-color: white;
 	margin-bottom: 25px;
 	padding-bottom: 50px;
+	padding-right: 5%;
 	position: relative;
 	min-height: 300px;
 }
@@ -199,6 +200,7 @@ p.brewery-list-card-location{
 	.brewery-list-card {
 		width: 24%;
 		min-height: 200px;
+		padding-left: 5px;
 	}
 }
 @media only screen and (max-width: 1000px) {

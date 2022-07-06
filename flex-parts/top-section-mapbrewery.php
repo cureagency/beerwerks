@@ -148,7 +148,7 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'MCGAHEYSVILLE'): ?>
+				  <?php if (get_field('city') == 'McGaheysville'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -186,7 +186,7 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'NATURAL BRIDGE'): ?>
+				  <?php if (get_field('city') == 'Natural Bridge'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -224,7 +224,7 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Raphine'): ?>
+				  <?php if (get_field('city') == 'RAPHINE'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   

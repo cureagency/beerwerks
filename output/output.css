@@ -760,13 +760,16 @@ a.borderbutton-white:hover {
 }
 
 .map-brewery-list-list {
-  padding: 0 10% 100px;
+  padding: 10px;
   box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: stretch;
+}
+
+.brewery-heading {
+  padding: 10%;
 }
 
 .brewery-list-card {
@@ -855,7 +858,7 @@ p.brewery-list-card-location {
     padding: 50px 5% 25px;
   }
   .map-brewery-list-list {
-    padding: 0 5% 50px;
+    padding: 5px;
   }
   .brewery-list-card {
     width: 48%;

@@ -2584,6 +2584,9 @@ a.blog-link:hover {
     display: flex;
     flex-flow: column;
   }
+  .visit-band .gform_footer.top_label {
+    width: 100%;
+  }
   .visit-band-wrapper {
     flex-flow: column;
   }

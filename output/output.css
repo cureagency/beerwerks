@@ -2011,6 +2011,9 @@ a .arrow-down {
   .right {
     flex-flow: column;
   }
+  .right .top-section-standard-right-text {
+    padding: 10px;
+  }
   .top-section-standard-left {
     width: 100%;
     height: 500px;

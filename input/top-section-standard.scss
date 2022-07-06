@@ -65,6 +65,9 @@
 	}
 	.right {
 		flex-flow: column;
+		.top-section-standard-right-text { 
+			padding: 10px;
+		}
 	}
 	.top-section-standard-left {
 		width: 100%;

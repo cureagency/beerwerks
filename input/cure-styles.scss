@@ -1090,6 +1090,14 @@ a .arrow-down {
 }
 
 @media only screen and (max-width: 1000px) {
+	.single-brewery-top-left-text {
+		position: relative;
+		// bottom: 0;
+		// left: 0;
+		// padding: 200px 100px 100px 100px;
+		// z-index: 500;
+	
+	}
 .visit-band {
 	padding: 120px 25px;
 	display: flex;

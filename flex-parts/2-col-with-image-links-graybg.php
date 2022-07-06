@@ -8,10 +8,10 @@
 				<?php the_sub_field('text_col2'); ?>
 			</div>
 		</div>
-		<div class="row row-eq-height justify-content-center">
+		<div class="row row-eq-height justify-content-center g-2">
 			<?php if( have_rows('image_links') ): ?>
 			    <?php while( have_rows('image_links') ): the_row(); ?>
-		        	<div class="col-lg-2 col-md-6">
+		        	<div class="col-lg-3">
 		        		<a href="<?php the_sub_field('link'); ?>">
 		        			<div class="img-page-card">
 		        				<div class="img-page-card-img background-image" style="background-image:url(<?php the_sub_field('image'); ?>);">

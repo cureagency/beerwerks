@@ -32,6 +32,8 @@
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  	<?php if (get_field('city') == 'Elkton'): ?>
+						<div>
+						<div class= "brewery-location-header"><h2><?php the_field('city');?></h2><div>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -53,6 +55,7 @@
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
 						</div>
+								</div>
 						<?php endif; ?>	
 				  <?php 
 				  endwhile;

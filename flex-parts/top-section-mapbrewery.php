@@ -31,9 +31,8 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
+				  <div class= "brewery-location-header"><h2>Elkton</h2><div>
 				  	<?php if (get_field('city') == 'Elkton'): ?>
-						<div>
-						<div class= "brewery-location-header"><h2><?php the_field('city');?></h2><div>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -55,7 +54,54 @@
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
 						</div>
-								</div>
+						<?php endif; ?>	
+						<div class= "brewery-location-header"><h2>Harrisonburg</h2><div>
+				  	<?php if (get_field('city') == 'Harrisonburg'): ?>
+				  		<div class="brewery-list-card">
+				  			<div class="brewery-list-card-top" id="brewerieslist">
+						  		<?php   
+								$thumb_id = get_post_thumbnail_id();
+								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+								$thumb_url = $thumb_url_array[0]; 
+								?>
+								<?php 
+								$image = get_field('logo');
+								if( !empty( $image ) ): ?>
+									<div class="single-brewery-logo-wrap">
+								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								    </div>
+								<?php endif; ?>	
+								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
+								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
+							</div>
+							<div class="brewery-list-card-link">
+								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<?php endif; ?>	
+						<div class= "brewery-location-header"><h2>Lexington</h2><div>
+				  	<?php if (get_field('city') == 'Lexington'): ?>
+				  		<div class="brewery-list-card">
+				  			<div class="brewery-list-card-top" id="brewerieslist">
+						  		<?php   
+								$thumb_id = get_post_thumbnail_id();
+								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+								$thumb_url = $thumb_url_array[0]; 
+								?>
+								<?php 
+								$image = get_field('logo');
+								if( !empty( $image ) ): ?>
+									<div class="single-brewery-logo-wrap">
+								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+								    </div>
+								<?php endif; ?>	
+								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
+								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
+							</div>
+							<div class="brewery-list-card-link">
+								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
 						<?php endif; ?>	
 				  <?php 
 				  endwhile;

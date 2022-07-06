@@ -30,7 +30,7 @@
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'meta_key' => 'title', 'orderby'=>'meta_value', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
 				  ?>
-				<div class= "brewery-location-header"><h2>Elkton</h2><div>
+				<h2>Elkton</h2>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  	<?php if (get_field('city') == 'Elkton'): ?>
 				  		<div class="brewery-list-card">
@@ -60,7 +60,7 @@
 				  wp_reset_postdata();
 				  ?>
 				  <hr>
-				  <div class= "brewery-location-header"><h2>Lexington</h2><div>
+				  <h2>Lexington</h2>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  	<?php if (get_field('city') == 'Lexington'): ?>
 				  		<div class="brewery-list-card">
@@ -90,7 +90,7 @@
 				  wp_reset_postdata();
 				  ?>
 				  <hr>
-				  <div class= "brewery-location-header"><h2>Harrisonburg</h2><div>
+				 <h2>Harrisonburg</h2>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  	<?php if (get_field('city') == 'Harrisonburg'): ?>
 				  		<div class="brewery-list-card">
@@ -120,7 +120,7 @@
 				  wp_reset_postdata();
 				  ?>
 				  <hr>
-				  <div class= "brewery-location-header"><h2>Lexington</h2><div>
+				  <h2>Lexington</h2>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 				  	<?php if (get_field('city') == 'Lexington'): ?>
 				  		<div class="brewery-list-card">

@@ -20,7 +20,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 .gold-text {
-  color: #DEA233;
+  color: #bd8429;
 }
 
 .white-text {
@@ -95,24 +95,24 @@ p {
 }
 p a {
   font-weight: 700;
-  color: #DEA233;
+  color: #bd8429;
 }
 p a:hover {
-  color: #DEA233;
+  color: #bd8429;
   opacity: 0.6;
 }
 
 a {
   font-weight: 700;
-  color: #DEA233;
+  color: #bd8429;
 }
 a:hover {
-  color: #DEA233;
+  color: #bd8429;
   opacity: 0.6;
 }
 a:visited {
   font-weight: 700;
-  color: #DEA233;
+  color: #bd8429;
 }
 
 ul li {
@@ -160,18 +160,18 @@ blockquote {
   margin: 0;
 }
 blockquote p {
-  color: #DEA233;
+  color: #bd8429;
   font-weight: 700;
   padding: 10px 0 10px 35px;
-  border-left: 15px solid #DEA233;
+  border-left: 15px solid #bd8429;
 }
 
 ul {
   margin: 0;
-  color: #DEA233;
+  color: #bd8429;
 }
 ul li {
-  color: #DEA233;
+  color: #bd8429;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -206,7 +206,7 @@ a.whitebutton {
   padding: 20px 50px;
   border: 1px solid white;
   display: inline-block;
-  color: #DEA233;
+  color: #bd8429;
   transition: all 1s;
   text-transform: uppercase;
   margin-top: 20px;
@@ -220,12 +220,12 @@ a.whitebutton:hover {
 }
 
 a.yellowbutton {
-  background-color: #DEA233;
+  background-color: #bd8429;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
   text-decoration: none;
   padding: 20px 50px;
-  border: 1px solid #DEA233;
+  border: 1px solid #bd8429;
   display: inline-block;
   color: white;
   transition: all 1s;
@@ -266,7 +266,7 @@ a.gold-button-nobg {
   text-decoration: none;
   padding: 20px 50px;
   display: inline-block;
-  color: #DEA233;
+  color: #bd8429;
   transition: all 1s;
   text-transform: uppercase;
   margin-top: 20px;
@@ -276,7 +276,7 @@ a.gold-button-nobg {
 }
 
 a.gold-button-nobg:hover {
-  border: 1px solid #DEA233;
+  border: 1px solid #bd8429;
 }
 
 a.borderbutton-white {
@@ -325,7 +325,7 @@ a.borderbutton-white:hover {
   right: 30%;
   top: 250px;
   bottom: 250px;
-  border-right: 5px dotted #DEA233;
+  border-right: 5px dotted #bd8429;
   display: block;
   position: absolute;
 }
@@ -368,12 +368,12 @@ a.borderbutton-white:hover {
   top: 50px;
   right: 47%;
   padding: 5px;
-  border: 2px solid #DEA233;
+  border: 2px solid #bd8429;
   border-radius: 50%;
   background-color: white;
 }
 .passport-repeater-number-wrap .passport-repeater-number {
-  background-color: #DEA233;
+  background-color: #bd8429;
   border-radius: 50%;
   height: 75px;
   width: 75px;
@@ -802,7 +802,7 @@ a.borderbutton-white:hover {
   color: #191919;
 }
 .brewery-list-card p:hover {
-  color: #DEA233;
+  color: #bd8429;
 }
 
 p.brewery-list-card-location {
@@ -1995,7 +1995,7 @@ a .arrow-down {
   position: absolute;
 }
 .top-section-standard-right-text .down-arrow {
-  color: #DEA233;
+  color: #bd8429;
   font-size: 50px;
   margin-top: 100px;
 }
@@ -2064,7 +2064,7 @@ a .arrow-down {
   position: relative;
 }
 .button-row a {
-  color: #DEA233;
+  color: #bd8429;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -2081,7 +2081,7 @@ a .arrow-down {
   right: 0;
 }
 .button-row .button-row-arrow i {
-  color: #DEA233;
+  color: #bd8429;
   font-size: 18px;
   transition: all 1s;
 }
@@ -2122,7 +2122,7 @@ a .img-page-card .img-page-card-text p {
 }
 a .img-page-card .img-page-card-text i {
   position: absolute;
-  color: #DEA233;
+  color: #bd8429;
   right: 20px;
   top: 20px;
 }
@@ -2136,7 +2136,7 @@ a:hover .img-page-card .img-page-card-img {
   opacity: 0.8;
 }
 a:hover .img-page-card .img-page-card-text p {
-  color: #DEA233;
+  color: #bd8429;
 }
 
 /*blog cta*/
@@ -2242,7 +2242,7 @@ p.blog-date {
   letter-spacing: 1px;
   margin: 0 0 15px 0;
   line-height: 1.05em;
-  color: #DEA233 !important;
+  color: #bd8429 !important;
   text-decoration: none !important;
 }
 p.blog-date a {
@@ -2252,7 +2252,7 @@ p.blog-date a {
   letter-spacing: 1px;
   margin: 0 0 15px 0;
   line-height: 1.05em;
-  color: #DEA233 !important;
+  color: #bd8429 !important;
   text-decoration: none !important;
   transition: all 2s;
 }
@@ -2298,7 +2298,7 @@ a.blog-link {
   margin: 10px 0 0;
   display: block;
   line-height: 1.05em;
-  color: #DEA233 !important;
+  color: #bd8429 !important;
   transition: all 2s;
 }
 a.blog-link:hover {

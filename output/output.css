@@ -23,6 +23,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #bd8429;
 }
 
+.red-text {
+  color: #983738;
+}
+
 .white-text {
   color: white;
 }

@@ -159,7 +159,7 @@
 	}
 }
 p.brewery-list-card-location{
-	color: #D08E30;
+	color: $gold;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 14px;
@@ -172,7 +172,7 @@ p.brewery-list-card-location{
 
 .brewery-list-card-link a{
 	background-color: black;
-	color: #D08E30;
+	color: $gold;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 14px;
@@ -191,7 +191,7 @@ p.brewery-list-card-location{
 	transition: all 1s;
 }
 .brewery-list-card-link a:hover {
-	background-color: #D08E30;
+	background-color: $gold;
 	color: black;
 }
 
@@ -250,7 +250,7 @@ p.brewery-list-card-location{
 	width: 30%;
 	box-sizing: border-box;
 	padding: 50px;
-	background-color: #983738;
+	background-color: $red;
 	background-size: cover;
 	background-position: center center;
 	border-right: 2px solid white;
@@ -462,7 +462,7 @@ img.single-brewery-logo {
 	width: 70px;
 	height: 3px;
 	display: block;
-	background-color: #B47C2A;
+	background-color: $gold;
 }
 
 .single-brewery-address {
@@ -475,7 +475,7 @@ img.single-brewery-logo {
 }
 
 .single-brewery-address h4{
-	color: #B47C2A;
+	color: $gold;
 	text-transform: uppercase;
 }
 
@@ -748,7 +748,7 @@ a .social-button {
 }
 
 a .social-button:hover {
-	background-color: #F6B332;
+	background-color: $gold;
 	color: black;
 }
 
@@ -827,7 +827,7 @@ a .arrow-down {
 	max-width: 1545px;
 	margin: 0 auto;
 	box-sizing: border-box;	
-	background-color: #F6B332;
+	background-color: $gold;
 	border-radius: 20px;
 	display: flex;
 	flex-flow: row;
@@ -860,7 +860,7 @@ a .arrow-down {
 }
 
 .yellow-onecolumn {
-	background-color: #F6B332;
+	background-color: $gold;
     padding: 25px 0 5px;
     margin: 0 auto 25px;
     max-width: 1050px;

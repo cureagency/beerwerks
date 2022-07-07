@@ -188,6 +188,10 @@
 			        <?php elseif( get_row_layout() == 'footer_banner' ): ?>
 
 			          <?php get_template_part( 'flex-parts/footer-banner' ); ?>	
+
+					<?php elseif( get_row_layout() == 'single-column-carousel' ): ?>
+
+						<?php get_template_part( 'flex-parts/single-column-carousel' ); ?>	
 			          
 			        <?php endif;
 

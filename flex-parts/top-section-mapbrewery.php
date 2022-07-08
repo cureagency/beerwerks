@@ -6,17 +6,7 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 				<div class="map-brewery-top-map acf-map">
-					<div id="map"></div>	
-					<?php while (have_posts()) : the_post();
-						$mapLocation = get_field('map');	
-					?>
-					<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						<p>test</p>
-					</div>
-					<?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
+					<div id="map"></div>
 				</div>
 			</div>
 		</div>

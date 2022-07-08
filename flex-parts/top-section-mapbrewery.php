@@ -5,17 +5,17 @@
 				<div class="map-brewery-top-text">
 					<?php the_sub_field('text'); ?>
 				</div>		
-				<div class="map-brewery-top-map">
+				<div class="map-brewery-top-map acf-map">
 					<div id="map"></div>
-					<script async defer
-					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs&callback=initMap">
-					</script>
+					<div class="col-lg-3">
+						<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						<?php the_field('map'); ?></div>
+					</div>
 				</div>
-
-
-
 			</div>
 		</div>
+
+
     <?php endwhile; ?>
 <?php endif; ?>	
 

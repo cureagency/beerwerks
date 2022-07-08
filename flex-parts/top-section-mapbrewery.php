@@ -32,9 +32,6 @@
 							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 							</div>
 						</div>
-						<div class="col-lg-9">
-							<p class="map-test"><?php the_field('map_location'); ?></p>
-						</div>
 					</div>
 					<?php 
 				  endwhile;

@@ -21,7 +21,7 @@
 				</div>	
 
 				<?php   
-				$mapLocation = get_field('map');	
+				$mapLocation = get_field('map_location');	
 				?>
 				<div class="container acf-map">
 					<div class="row large-bottom-padding large-top-padding">
@@ -30,7 +30,7 @@
 							</div>
 						</div>
 						<div class="col-lg-9">
-							<?php the_field('map'); ?>
+							<?php the_field('map_location'); ?>
 						</div>
 					</div>
 				</div>

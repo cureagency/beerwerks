@@ -27,14 +27,14 @@
 				</div>	
 
 	
-				<div class="container acf-map">
+				<div class="acf-map">
 					<?php 
 				  	$the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
 					  $mapLocation = get_field('map_location');	
 				  	?>
 				  	<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-					<div class="row large-bottom-padding large-top-padding">
-						<div class="col-lg-3">
+					<div class="row">
+						<div class="individual">
 							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 							</div>
 						</div>

@@ -228,6 +228,11 @@ function maps()
 }
 add_action('wp_enqueue_scripts', 'maps');
 
+function mapBrewery($api){
+	$api['key'] = 'AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'mapBrewery');
 /**
  * Register a custom post type called "brewery".
  *

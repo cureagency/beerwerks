@@ -24,7 +24,7 @@
 				$mapLocation = get_field('map_location');	
 				?>
 				<div class="container acf-map">
-					<?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
+					<?php while (have_posts()) : the_post(); ?>
 					<div class="row large-bottom-padding large-top-padding">
 						<div class="col-lg-3">
 							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">

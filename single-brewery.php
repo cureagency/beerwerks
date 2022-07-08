@@ -12,7 +12,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<?while (have_posts()) : the_post();
-				$mapLocation = get_field('map');	
+				$mapLocation = get_field('map_location');	
 		?>
 
 			<div class="single-brewery-top">
@@ -106,7 +106,7 @@ get_header();
 						</div>
 					</div>
 					<div class="col-lg-9">
-						<?php the_field('map'); ?>
+						<?php the_field('map_location'); ?>
 					</div>
 				</div>
 			</div>

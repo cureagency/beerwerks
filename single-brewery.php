@@ -97,15 +97,18 @@ get_header();
 				</div>
 			</div>
 
-			<?php while( have_posts()){
-				the_post(); ?>
-						<li><a><?php the_title();
-							$mapLocation = get_field('map');
-							print_r($mapLocation); ?> </a></li>
-							<?php }
-							?>
-							<?php the_field('map'); ?>
-				<?php endwhile; ?>
+			<div class="container">
+				<div class="row large-bottom-padding large-top-padding">
+					<div class="col-lg-3">
+						<li><?php the_title();
+						$mapLocation = get_field('map');
+						print_r($mapLocation); ?> </li>
+					</div>
+					<div class="col-lg-9">
+						<?php the_field('map'); ?>
+					</div>
+				</div>
+			</div>
 
 			<div class="single-brewery-events-block" id="right-block">
 				<div class="single-brewery-events-block-left">

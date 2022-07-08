@@ -52,6 +52,8 @@
 								$thumb_id = get_post_thumbnail_id();
 								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 								$thumb_url = $thumb_url_array[0]; 
+								$mapLocation = get_field('map_location');	
+
 								?>
 								<?php 
 								$image = get_field('logo');
@@ -66,6 +68,9 @@
 							<div class="brewery-list-card-link">
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
+							<div class="col-lg-9">
+							<?php the_field('map_location'); ?>
+						</div>
 						</div>
 						<?php endif; ?>
 				  <?php 

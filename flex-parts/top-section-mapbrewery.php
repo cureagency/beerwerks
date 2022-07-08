@@ -24,15 +24,17 @@
 				$mapLocation = get_field('map_location');	
 				?>
 				<div class="container acf-map">
+					<?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
 					<div class="row large-bottom-padding large-top-padding">
 						<div class="col-lg-3">
 							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 							</div>
 						</div>
 						<div class="col-lg-9">
-							<?php the_field('map_location'); ?>
+							<p class="map-test"><?php the_field('map_location'); ?></p>
 						</div>
 					</div>
+				<?php endwhile; ?>				  ?>
 				</div>
 
 
@@ -52,7 +54,6 @@
 								$thumb_id = get_post_thumbnail_id();
 								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 								$thumb_url = $thumb_url_array[0]; 
-								$mapLocation = get_field('map_location');	
 
 								?>
 								<?php 
@@ -64,7 +65,6 @@
 								<?php endif; ?>	
 								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
 								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-								<p class="map-test"><?php the_field('map_location'); ?></p>
 							</div>
 							<div class="brewery-list-card-link">
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>

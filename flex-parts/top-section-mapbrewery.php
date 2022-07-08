@@ -15,21 +15,27 @@
 
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); ?>
-			<div class="container">
-
-				<div class="test">
-					<h2>Map test</h2>
-				</div>
-			</div>
-    <?php endwhile; ?>
-<?php endif; ?>	
-
-<?php if( have_rows('brewery_list') ): ?>
-    <?php while( have_rows('brewery_list') ): the_row(); ?>
 			<div class="map-brewery-list-wrap">
 				<div class="map-brewery-list-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
+
+				<?php   
+				$mapLocation = get_field('map');	
+				?>
+				<div class="container acf-map">
+					<div class="row large-bottom-padding large-top-padding">
+						<div class="col-lg-3">
+							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<?php the_field('map'); ?>
+						</div>
+					</div>
+				</div>
+
+
 				<div class="brewery-heading">
 					<h2>Elkton</h2>
 				</div>

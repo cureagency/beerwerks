@@ -4,10 +4,16 @@
 			<div class="map-brewery-top-wrap">
 				<div class="map-brewery-top-text">
 					<?php the_sub_field('text'); ?>
-				</div>	
-				<div class="map-brewery-top-map acf-map">
+				</div>		
+				<div class="map-brewery-top-map">
 					<div id="map"></div>
+					<script async defer
+					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs&callback=initMap">
+					</script>
 				</div>
+
+
+
 			</div>
 		</div>
     <?php endwhile; ?>

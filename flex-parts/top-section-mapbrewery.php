@@ -20,11 +20,13 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 
-				<?php   
-				$mapLocation = get_field('map_location');	
-				?>
+	
 				<div class="container acf-map">
-					<?php while (have_posts()) : the_post(); ?>
+					<?php 
+				  	$the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
+					  $mapLocation = get_field('map_location');	
+				  	?>
+				  	<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 					<div class="row large-bottom-padding large-top-padding">
 						<div class="col-lg-3">
 							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
@@ -34,7 +36,10 @@
 							<p class="map-test"><?php the_field('map_location'); ?></p>
 						</div>
 					</div>
-				<?php endwhile; ?>				  ?>
+					<?php 
+				  endwhile;
+				  wp_reset_postdata();
+				  ?>			
 				</div>
 
 

@@ -99,7 +99,7 @@ get_header();
 
 			<?php while( have_posts()){
 				the_post(); ?>
-						<li><a href="<?php the_permalink(); ?>"><?php the_title();
+						<li><a><?php the_title();
 							$mapLocation = get_field('map');
 							print_r($mapLocation); ?> </a></li>
 							<?php }

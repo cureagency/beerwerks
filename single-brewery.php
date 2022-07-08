@@ -12,7 +12,6 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<?while (have_posts()) : the_post();
-				$mapLocation = get_field('map_location');	
 		?>
 
 			<div class="single-brewery-top">
@@ -99,17 +98,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="container acf-map">
-				<div class="row large-bottom-padding large-top-padding">
-					<div class="col-lg-3">
-						<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						</div>
-					</div>
-					<div class="col-lg-9">
-						<?php the_field('map_location'); ?>
-					</div>
-				</div>
-			</div>
+
 
 			<div class="single-brewery-events-block" id="right-block">
 				<div class="single-brewery-events-block-left">

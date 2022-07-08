@@ -7,10 +7,8 @@
 				</div>		
 				<div class="map-brewery-top-map acf-map">
 					<div id="map"></div>
-					<div class="col-lg-3">
-						<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						<?php the_field('map'); ?></div>
-					</div>
+					<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+					<?php the_field('map'); ?></div>
 				</div>
 			</div>
 		</div>

@@ -16,20 +16,9 @@
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); ?>
 			<div class="container">
-				<div class="row">
-					<?php the_field('map'); ?>
-				</div>	
+
 				<div class="test">
 					<h2>Map test</h2>
-				</div>
-				<div class="acf-map">
-					<?php while (have_posts()) : the_post();
-					$mapLocation = get_field('map');	
-					?>
-						<?php the_field('map'); ?>
-						<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						</div>
-					<?php endwhile;	?>
 				</div>
 			</div>
     <?php endwhile; ?>

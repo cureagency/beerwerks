@@ -64,13 +64,11 @@
 								<?php endif; ?>	
 								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
 								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
+								<p class="map-test"><?php the_field('map_location'); ?></p>
 							</div>
 							<div class="brewery-list-card-link">
 								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
 							</div>
-							<div class="col-lg-9">
-							<?php the_field('map_location'); ?>
-						</div>
 						</div>
 						<?php endif; ?>
 				  <?php 

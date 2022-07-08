@@ -516,6 +516,24 @@
                         "mime_types": ""
                     }
                 ]
+            },
+            {
+                "key": "field_62c8a902c7fcc",
+                "label": "Map Location",
+                "name": "map_location",
+                "type": "google_map",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "center_lat": "",
+                "center_lng": "",
+                "zoom": "",
+                "height": ""
             }
         ],
         "location": [
@@ -535,8 +553,7 @@
         "hide_on_screen": "",
         "active": true,
         "description": "",
-        "show_in_rest": 0,
-        "modified": 1645726758
+        "show_in_rest": 0
     },
     {
         "key": "group_61fd30f5cdeed",
@@ -4781,7 +4798,7 @@
                 "name": "map",
                 "type": "google_map",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -4799,7 +4816,14 @@
                 {
                     "param": "page",
                     "operator": "==",
-                    "value": "7692"
+                    "value": "11431"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "brewery"
                 }
             ]
         ],

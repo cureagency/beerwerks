@@ -99,21 +99,12 @@ get_header();
 
 			<?php while( have_posts()){
 				the_post(); ?>
-				<div class="container">
-					<div class="row large-bottom-padding large-top-padding">
-						<div class="col-lg-3">
-							<h2>Map </h2>
-						</div>
-						<div class="col-lg-9">
-							<li><a href="<?php the_permalink(); ?>"><?php the_title();
+						<li><a href="<?php the_permalink(); ?>"><?php the_title();
 							$mapLocation = get_field('map');
-							print_r(); ?> </a></li>
+							print_r($mapLocation); ?> </a></li>
 							<?php }
-							echo paginate_links(); ?>
+							?>
 							<?php the_field('map'); ?>
-						</div>
-					</div>
-				</div>
 				<?php endwhile; ?>
 
 			<div class="single-brewery-events-block" id="right-block">

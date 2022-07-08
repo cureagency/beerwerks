@@ -4,11 +4,19 @@
 			<div class="map-brewery-top-wrap">
 				<div class="map-brewery-top-text">
 					<?php the_sub_field('text'); ?>
-				</div>		
+				</div>	
 				<div class="map-brewery-top-map acf-map">
-					<div id="map"></div>
+					<div id="map"></div>	
+					<?php 
+				 		$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
+						$loop = new WP_Query( $args);
+				  	?>
+					<?php while ($loop -> have_posts()) : $loop -> the_post(); 
+						$mapLocation = get_field('map');	
+					?>
 					<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-					<?php the_field('map'); ?></div>
+						<?php the_field('map'); ?>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -29,13 +29,19 @@
 				</div>	
 
 	
-				<div class ="container acf-map">
-				<div class="row large-bottom-padding large-top-padding">
-					  <div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						</div>
+				<div class="map-brewery-list-list">
+				 <?php 
+				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
+					$loop = new WP_Query( $args);
+				  ?>
+				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
+				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						</div>				  
+					<?php 
+				  endwhile;
+				  wp_reset_postdata();
+				  ?>
 				</div>
-				</div>
-
 
 
 				<div class="brewery-heading">

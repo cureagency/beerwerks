@@ -29,14 +29,16 @@
 	
 				<div class ="container container--narrow page-section">
 				<div class="acf-map">
-					
-				  	<?php while ( have_posts()) { 
-						the_post(); 
-						$mapLocation = get_field('map_location');	
-						?>
+					<?php 
+				  	  $the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
+					  $mapLocation = get_field('map_location');	
+				  	?>
+				  	<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 							<div class="marker" data-lat="<?php echo esc_attr($mapLocation['lat']); ?>" data-lng="<?php echo esc_attr($mapLocation['lng']); ?>">
 							</div>
-					<?php }
+					<?php 
+				  endwhile;
+				  wp_reset_postdata();
 				  ?>			
 				</div>
 				</div>

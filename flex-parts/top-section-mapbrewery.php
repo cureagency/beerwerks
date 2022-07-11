@@ -1,10 +1,12 @@
-<?php if( have_rows('map_section') ): ?>
-    <?php while( have_rows('map_section') ): the_row(); ?>
-		<div class="map-brewery-top">
+<div class="map-brewery-top">
+		<?php if( have_rows('map_section') ): ?>
+   		<?php while( have_rows('map_section') ): the_row(); ?>
 			<div class="map-brewery-top-wrap">
 				<div class="map-brewery-top-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
+		<?php endwhile; ?>
+		<?php endif; ?>	
 
 
 				<div class="map-brewery-top-map acf-map">
@@ -31,14 +33,8 @@
 					<?php endwhile; ?>
 					<?php endif; ?>	
 				</div>
-	
+</div>
 
-
-
-			</div>
-		</div>
-    <?php endwhile; ?>
-<?php endif; ?>	
 
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); 

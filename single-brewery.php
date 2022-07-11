@@ -101,7 +101,8 @@ get_header();
 			<div class="container acf-map">
 				<div class="row large-bottom-padding large-top-padding">
 						<li><a href="<?php the_permalink(); ?>"><?php the_title();
-						$mapLocation = get_field('map_location'); ?></a></li>
+						$mapLocation = get_field('map_location'); 
+						print_r($mapLocation); ?></a></li>
 				</div>
 			</div>
 

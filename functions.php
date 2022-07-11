@@ -146,6 +146,8 @@ function beerwerks_scripts() {
 	wp_enqueue_script( 'beerwerks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	// wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), _S_VERSION, true );
+	
+	wp_enqueue_script( 'googlemap', get_template_directory_uri() . '/js/googlemap.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script('jquery', get_theme_file_uri('/js/jquery-3.5.1.min.js'), null, '3.5.1', false);
 

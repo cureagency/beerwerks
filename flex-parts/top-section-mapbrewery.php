@@ -9,7 +9,7 @@
 		<?php endif; ?>	
 
 
-				<div class="map-brewery-top-map acf-map">
+				<div class="map-brewery-top-map acf-map" id="map">
 					<?php if( have_rows('brewery_list') ): ?>
 					<?php while( have_rows('brewery_list') ): the_row(); ?>
 				 	<?php 
@@ -43,28 +43,6 @@
 				<div class="map-brewery-list-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
-
-	
-				<div class="map-brewery-list-list acf-map">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
-					$query = new WP_Query( $args);
-				  ?>
-				  <?php while ($query -> have_posts()) : $query -> the_post(); ?>
-				  <?php	
-				  $mapLocation = get_field('map_location');
-				  if (!empty($mapLocation)): ?>
-						<?php	$mapLocation = get_field('map_location');?>
-				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						  <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-						  <?php echo $mapLocation['address'] ?>
-						</div>	
-					<?php endif; ?>			  
-					<?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
-				</div>
 
 
 				<div class="brewery-heading">

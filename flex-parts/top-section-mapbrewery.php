@@ -1,7 +1,7 @@
 <div class="map-brewery-top">
+<div class="map-brewery-top-wrap">
 		<?php if( have_rows('map_section') ): ?>
    		<?php while( have_rows('map_section') ): the_row(); ?>
-			<div class="map-brewery-top-wrap">
 				<div class="map-brewery-top-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
@@ -33,6 +33,7 @@
 					<?php endwhile; ?>
 					<?php endif; ?>	
 				</div>
+</div>
 </div>
 
 <div class="map-brewery-list-wrap">

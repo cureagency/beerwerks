@@ -34,7 +34,7 @@
 					  $mapLocation = get_field('map_location');	
 				  	?>
 				  	<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-							<div class="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+							<div class="marker" data-lat="<?php echo esc_attr($mapLocation['lat']); ?>" data-lng="<?php echo esc_attr($mapLocation['lng']); ?>">
 							</div>
 					<?php 
 				  endwhile;

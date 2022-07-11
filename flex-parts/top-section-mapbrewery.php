@@ -27,6 +27,7 @@
 				</div>	
 
 	
+				<div class ="container container--narrow page-section">
 				<div class="acf-map">
 					<?php 
 				  	$the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
@@ -43,6 +44,7 @@
 				  endwhile;
 				  wp_reset_postdata();
 				  ?>			
+				</div>
 				</div>
 
 

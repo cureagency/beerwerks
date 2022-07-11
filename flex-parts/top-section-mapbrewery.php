@@ -6,21 +6,19 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 
-				<?php if( have_rows('brewery_list') ): ?>
 
-   			 <?php while( have_rows('brewery_list') ): the_row(); 
-					?>
-				<div class="map-brewery-top-map">
-					<div class="map-brewery-list-list acf-map">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
-					$query = new WP_Query( $args);
-				  ?>
-				  <?php while ($query -> have_posts()) : $query -> the_post(); ?>
-				  <?php	
-				  $mapLocation = get_field('map_location');
-				  if (!empty($mapLocation)): ?>
-						<?php	$mapLocation = get_field('map_location');?>
+				<div class="map-brewery-top-map acf-map">
+					<?php if( have_rows('brewery_list') ): ?>
+					<?php while( have_rows('brewery_list') ): the_row(); ?>
+				 	<?php 
+				 		$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
+						$query = new WP_Query( $args);
+				  	?>
+				 	<?php while ($query -> have_posts()) : $query -> the_post(); ?>
+				  	<?php	
+				  		$mapLocation = get_field('map_location');
+				  		if (!empty($mapLocation)): ?>
+						<?php $mapLocation = get_field('map_location');?>
 				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 						  <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 						  <?php echo $mapLocation['address'] ?>
@@ -30,10 +28,10 @@
 				  endwhile;
 				  wp_reset_postdata();
 				  ?>
+					<?php endwhile; ?>
+					<?php endif; ?>	
 				</div>
-				</div>
-				<?php endwhile; ?>
-				<?php endif; ?>		
+	
 
 
 

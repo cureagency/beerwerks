@@ -35,11 +35,11 @@
 				</div>
 </div>
 
+<div class="map-brewery-list-wrap">
 
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); 
 	?>
-			<div class="map-brewery-list-wrap">
 				<div class="map-brewery-list-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
@@ -349,6 +349,6 @@
 				  wp_reset_postdata();
 				  ?>
 				</div>
-			</div>
     <?php endwhile; ?>
 <?php endif; ?>	
+</div>

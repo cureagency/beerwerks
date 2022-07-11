@@ -20,26 +20,19 @@
 <?php endif; ?>	
 
 <?php if( have_rows('brewery_list') ): ?>
-    <?php while( have_rows('brewery_list') ): the_row(); ?>
+    <?php while( have_rows('brewery_list') ): the_row(); 
+	$mapLocation = get_field('map_location');	
+	?>
 			<div class="map-brewery-list-wrap">
 				<div class="map-brewery-list-text">
 					<?php the_sub_field('text'); ?>
 				</div>	
 
 	
-				<div class ="container container--narrow page-section">
+				<div class ="container acf-map">
 				<div class="acf-map">
-					<?php 
-				  	  $the_query = new WP_Query( array( 'post_type' => 'brewery', 'posts_per_page' => -1 ) ); 
-					  $mapLocation = get_field('map_location');	
-				  	?>
-				  	<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 					  <div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 						</div>
-					<?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>			
 				</div>
 				</div>
 

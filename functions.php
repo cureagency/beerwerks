@@ -145,7 +145,11 @@ function beerwerks_scripts() {
 
 	wp_enqueue_script( 'beerwerks-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), _S_VERSION, true );
+	// wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script('jquery', get_theme_file_uri('/js/jquery-3.5.1.min.js'), null, '3.5.1', false);
+
+	wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs' , null, _S_VERSION, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -216,17 +220,6 @@ function my_acf_json_load_point( $paths ) {
     return $paths;
 }
 
-function insert_jquery()
-{
-    wp_enqueue_script('jquery', get_theme_file_uri('/js/jquery-3.5.1.min.js'), null, '3.5.1', false);
-}
-add_filter('wp_enqueue_scripts', 'insert_jquery', 1);
-
-function maps()
-{
-    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs' , null, 1.0, true);
-}
-add_action('wp_enqueue_scripts', 'maps');
 
 function mapBrewery($api){
 	$api['key'] = 'AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs';

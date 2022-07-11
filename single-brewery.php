@@ -98,6 +98,13 @@ get_header();
 				</div>
 			</div>
 
+			<div class="container acf-map">
+				<div class="row large-bottom-padding large-top-padding">
+						<li><a href="<?php the_permalink(); ?>"><?php the_title();
+						$mapLocation = get_field('map_location'); ?></a></li>
+				</div>
+			</div>
+
 
 
 			<div class="single-brewery-events-block" id="right-block">

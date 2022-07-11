@@ -35,11 +35,11 @@
 				  ?>
 				  <?php while ($query -> have_posts()) : $query -> the_post(); ?>
 				  	<?php if (get_field('city')  == 'Elkton'): ?>
-						<?php 	$mapLocation = get_field('map_location');	?>
+						<?php	$mapLocation = get_field('map_location');?>
 				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						<?php the_field('map_location['lng']'); ?>
+					<?php echo $mapLocation['lat']; ?>
 						</div>	
-						<?php endif; ?>			  
+					<?php endif; ?>			  
 					<?php 
 				  endwhile;
 				  wp_reset_postdata();

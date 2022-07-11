@@ -224,7 +224,8 @@ add_filter('wp_enqueue_scripts', 'insert_jquery', 1);
 
 function maps()
 {
-    wp_enqueue_script('js-map2',  get_template_directory_uri('/js/map2.js'), null, 1.0, true);
+    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzyOu7LZfkLOnYkCVO4gpln9kKO0TYpfs' , null, 1.0, true);
+	wp_enqueue_script('js-map2',  get_template_directory_uri('/js/map2.js'), null, 1.0, true);
 }
 add_action('wp_enqueue_scripts', 'maps');
 

@@ -28,7 +28,7 @@
 				</div>	
 
 	
-				<div class="map-brewery-list-list">
+				<div class="map-brewery-list-list acf-map">
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
 					$query = new WP_Query( $args);

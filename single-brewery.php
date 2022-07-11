@@ -99,14 +99,6 @@ get_header();
 				</div>
 			</div>
 
-			<div class="container acf-map">
-				<div class="row large-bottom-padding large-top-padding">
-						<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						</div>
-				</div>
-			</div>
-
-
 
 			<div class="single-brewery-events-block" id="right-block">
 				<div class="single-brewery-events-block-left">

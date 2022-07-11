@@ -21,7 +21,6 @@
 
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); 
-	$mapLocation = get_field('map_location');	
 	?>
 			<div class="map-brewery-list-wrap">
 				<div class="map-brewery-list-text">
@@ -32,11 +31,15 @@
 				<div class="map-brewery-list-list">
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1);
-					$loop = new WP_Query( $args);
+					$query = new WP_Query( $args);
 				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
+				  <?php while ($query -> have_posts()) : $query -> the_post(); ?>
+				  	<?php if (get_field('city')  == 'Elkton'): ?>
+						<?php 	$mapLocation = get_field('map_location');	?>
 				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						</div>				  
+						<?php the_field('map_location['lng']'); ?>
+						</div>	
+						<?php endif; ?>			  
 					<?php 
 				  endwhile;
 				  wp_reset_postdata();

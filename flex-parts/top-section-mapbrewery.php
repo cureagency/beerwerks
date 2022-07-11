@@ -38,7 +38,9 @@
 				  $mapLocation = get_field('map_location');
 				  if (!empty($mapLocation)): ?>
 						<?php	$mapLocation = get_field('map_location');?>
-				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>"><?php echo $mapLocation['address'] ?>
+				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						  <p><?php the_title(); ?></p>
+						  <?php echo $mapLocation['address'] ?>
 						</div>	
 					<?php endif; ?>			  
 					<?php 

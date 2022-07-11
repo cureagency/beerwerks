@@ -34,10 +34,11 @@
 					$query = new WP_Query( $args);
 				  ?>
 				  <?php while ($query -> have_posts()) : $query -> the_post(); ?>
-				  	<?php if (get_field('city')  == 'Elkton'): ?>
+				  <?php	
+				  $mapLocation = get_field('map_location');
+				  if (!empty($mapLocation)): ?>
 						<?php	$mapLocation = get_field('map_location');?>
 				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-					<?php echo $mapLocation['lat']; ?>
 						</div>	
 					<?php endif; ?>			  
 					<?php 

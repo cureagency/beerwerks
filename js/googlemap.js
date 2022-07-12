@@ -232,7 +232,7 @@
             map,
             icon: {
                 url: pngMarker,
-                scaledSize: new google.maps.Size(8, 12),
+                scaledSize: new google.maps.Size(36, 50),
             },
         });
     

@@ -230,7 +230,10 @@
         var marker = new google.maps.Marker({
             position : latLng,
             map,
-            icon: pngMarker,
+            icon: {
+                url: pngMarker,
+                scaledSize: new google.maps.Size(8, 12),
+            },
         });
     
         // Append to reference for later use.

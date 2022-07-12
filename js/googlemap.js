@@ -224,18 +224,12 @@
             lng: parseFloat( lng )
         };
     
-        var svgMarker = {
-            path: d= "m600 145.2c-184.8 0-334.8 150-334.8 334.8 0 178.8 303.6 550.8 316.8 566.4 4.8008 6 10.801 8.3984 18 8.3984s14.398-3.6016 18-8.3984c13.199-15.602 316.8-387.6 316.8-566.4 0-184.8-150-334.8-334.8-334.8zm0 492c-86.398 0-157.2-70.801-157.2-157.2s70.801-157.2 157.2-157.2 157.2 70.801 157.2 157.2-70.801 157.2-157.2 157.2z", 
-            fillColor: "#bc8428",
-            strokeWeight: 1,
-            rotation: 0,
-            scale: 2,
-            anchor: new google.maps.Point(15, 30),
-        }
+        var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/noun-location-4366096-BD8429.png";
+
         // Create marker instance.
         var marker = new google.maps.Marker({
             position : latLng,
-            icon: svgMarker,
+            icon: pngMarker,
             map: map
         });
     

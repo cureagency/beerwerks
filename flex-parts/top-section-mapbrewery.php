@@ -23,7 +23,7 @@
 						<?php $mapLocation = get_field('map_location');?>
 				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 						  <p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
-						  <?php echo $mapLocation['address'] ?>
+						  <?php echo $mapLocation['address'] ?><br/>
 						  <a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a>
 						</div>	
 					<?php endif; ?>			  

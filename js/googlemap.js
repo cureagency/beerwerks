@@ -229,8 +229,8 @@
         // Create marker instance.
         var marker = new google.maps.Marker({
             position : latLng,
+            map,
             icon: pngMarker,
-            map: map
         });
     
         // Append to reference for later use.

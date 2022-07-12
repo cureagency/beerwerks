@@ -19,19 +19,7 @@
         // Create gerenic map.
         var mapArgs = {
             zoom        : $el.data('zoom') || 16,
-            mapTypeId   : google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map( $el[0], mapArgs );
-    
-        // Add markers.
-        map.markers = [];
-        $markers.each(function(){
-            initMarker( $(this), map );
-        });
-
-        var mapOptions = {
-            // How you would like to style the map. 
-            // This is where you would paste any style found on Snazzy Maps.
+            mapTypeId   : google.maps.MapTypeId.ROADMAP,
             styles: [
                 { "featureType": "water", "elementType": "geometry", "stylers": [ {  "color": "#e9e9e9" }, {    "lightness": 17 }  ] },
                 {
@@ -198,9 +186,13 @@
                 }
             ]
         };
-        var mapElement = document.getElementById('map');
-
-        var map = new google.maps.Map(mapElement, mapOptions);
+        var map = new google.maps.Map( $el[0], mapArgs );
+    
+        // Add markers.
+        map.markers = [];
+        $markers.each(function(){
+            initMarker( $(this), map );
+        });
 
         // Center map based on markers.
         centerMap( map );

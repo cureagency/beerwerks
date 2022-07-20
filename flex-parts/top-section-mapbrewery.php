@@ -7,9 +7,12 @@
 				</div>	
 		<?php endwhile; ?>
 		<?php endif; ?>	
+				
+</div>
+</div>
 
-
-				<div class="map-brewery-top-map acf-map" id="map">
+<div class="map-brewery-middle">
+<div class="map acf-map" id="map">
 					<?php if( have_rows('brewery_list') ): ?>
 					<?php while( have_rows('brewery_list') ): the_row(); ?>
 				 	<?php 
@@ -34,9 +37,8 @@
 					<?php endwhile; ?>
 					<?php endif; ?>	
 				</div>
-</div>
-</div>
 
+</div>
 <div class="map-brewery-list-wrap">
 
 <?php if( have_rows('brewery_list') ): ?>

@@ -6,8 +6,7 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 		<?php endwhile; ?>
-		<?php endif; ?>	
-				
+		<?php endif; ?>					
 </div>
 </div>
 
@@ -36,11 +35,10 @@
 				  ?>
 					<?php endwhile; ?>
 					<?php endif; ?>	
-				</div>
-
 </div>
-<div class="map-brewery-list-wrap">
+</div>
 
+<div class="map-brewery-list-wrap">
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); 
 	?>

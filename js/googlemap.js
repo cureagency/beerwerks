@@ -406,7 +406,7 @@
     //   };
 
         // Create marker instance.
-                var pngMarker = "http://beerwerks-test.local/wp-content/uploads/2022/07/noun-location-1807386-BD8429.png";
+                var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/noun-map-pin-425483-BD8429.png";
 
         var marker = new google.maps.Marker({
             position : latLng,

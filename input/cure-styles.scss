@@ -7,7 +7,7 @@
 .map-brewery-top {
 	background-color: #191919;
 	position: relative;
-	min-height: 100vh;
+	min-height: 90vh;
 	width: 100%;
 	box-sizing: border-box;
 	padding: 200px 0 90px;
@@ -24,25 +24,26 @@
 	box-sizing: border-box;
 }
 .map-brewery-top-text{
-	width: 80%;
+	width: 70%;
 	// padding-right: 10%;
 	text-align: center;
 	height: 100%;
 	position: relative;
 	box-sizing: border-box;
 }
-.map-brewery-top-map{
-	width: 50%;
-	height: 100%;
-	position: relative;
-	margin-top: 300px;
-	// box-sizing: border-box;
+.map-brewery-middle{
+	margin-top: -150px;
+	z-index: 9;
+	padding: 0 5%;
+	margin-bottom: 5%;
 }
 .acf-map {
     width: 50%;
     height: 400px;
     border: #ccc solid 1px;
-    margin: 20px 0;
+    margin: 0;
+	position: relative;
+	padding: 0 5% 5% 5%;
 }
 .acf-map img {
 	max-width: inherit !important;
@@ -97,10 +98,11 @@
 		width: 100%;
 		padding: 0;
 	}
-	.map-brewery-top-map{
-		width: 100%;
-		padding: 0;
-		min-height: 350px;	
+	.map-brewery-middle{
+		margin-top:5%;
+		z-index: 9;
+		padding: 0 5%;
+		margin-bottom: 0%;
 	}
 }
 /*mobile*/
@@ -110,9 +112,10 @@
 	position: relative;
 	width: 100%;
 	max-width: 1500px;
-	margin: -150px auto 50px;
+	margin: auto auto 50px;
 	box-sizing: border-box;
-	background-color: #F7F7F7;
+	// background-color: #F7F7F7;
+	padding-top: 1%;
 }
 .map-brewery-list-text {
 	padding: 10px 20%;

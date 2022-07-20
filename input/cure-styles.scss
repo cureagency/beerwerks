@@ -10,11 +10,11 @@
 	min-height: 100vh;
 	width: 100%;
 	box-sizing: border-box;
-	padding: 200px 0 250px;
+	padding: 200px 0 90px;
 }
 .map-brewery-top-wrap{
 	display: flex;
-	flex-flow: row;
+	flex-flow: column;
 	align-items: center;
 	position: relative;
 	width: 100%;
@@ -24,8 +24,9 @@
 	box-sizing: border-box;
 }
 .map-brewery-top-text{
-	width: 50%;
-	padding-right: 10%;
+	width: 80%;
+	// padding-right: 10%;
+	text-align: center;
 	height: 100%;
 	position: relative;
 	box-sizing: border-box;
@@ -34,10 +35,11 @@
 	width: 50%;
 	height: 100%;
 	position: relative;
-	box-sizing: border-box;
+	margin-top: 300px;
+	// box-sizing: border-box;
 }
 .acf-map {
-    width: 100%;
+    width: 50%;
     height: 400px;
     border: #ccc solid 1px;
     margin: 20px 0;
@@ -113,7 +115,7 @@
 	background-color: #F7F7F7;
 }
 .map-brewery-list-text {
-	padding: 100px 20%;
+	padding: 10px 20%;
 	box-sizing: border-box;
 	width: 100%;
 }
@@ -135,8 +137,89 @@
 	flex-wrap: wrap;
   	align-items: stretch;
 }
-.brewery-heading{
+.brewery-headinga{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	background-color: #5F68A7;
 	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.brewery-headingb{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: space-between;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	background-color: $gold;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.brewery-headingc{
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	vertical-align: middle;
+	align-items: stretch;
+	color: white;
+	justify-content: space-between;
+	background-color: $red;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.brewery-headinga p{
+	vertical-align: middle !important;
+	text-align: center;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+}
+.brewery-headingb p{
+	vertical-align: middle !important;
+	text-align: center;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+}
+.brewery-headingc p{
+	vertical-align: middle !important;
+	text-align: center;
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+}
+.brewery-headinga h2{
+	vertical-align: middle !important;
+	text-align: center;
+	margin: 0 !important;
+}
+.brewery-headingb h2{
+	vertical-align: middle !important;
+	text-align: center;
+	margin: 0 !important;
+}
+.brewery-headingc h2{
+	vertical-align: middle !important;
+	text-align: center;
+	margin: 0 !important;
 }
 .brewery-list-card {
 	width: 18%;

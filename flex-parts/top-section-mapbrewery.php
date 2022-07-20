@@ -46,17 +46,17 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 
-
-				<div class="brewery-heading">
-					<h2>Elkton</h2>
-				</div>
+				<div class= "brewery-headinga">
+						<h2>ZONE A</h2>
+						<p>Includes Harrisonburg, Elkton, and Rockingham County</p>
+</div>
 				<div class="map-brewery-list-list">
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Elkton'): ?>
+				  <?php if (get_field('region') == 'Rockingham County'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -85,17 +85,18 @@
 				  wp_reset_postdata();
 				  ?>
 				</div>
-				<hr>	
-				<div class="brewery-heading">
-					<h2>Harrisonburg</h2>
-				</div>
+
+				<div class= "brewery-headingb">
+						<h2>ZONE B</h2>
+						<p>Includes Waynesboro, Staunton, and Augusta County</p>
+</div>
 				<div class="map-brewery-list-list">
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Harrisonburg'): ?>
+				  <?php if (get_field('region') == 'Augusta County'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -123,17 +124,19 @@
 				  wp_reset_postdata();
 				  ?>
 				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>Lexington</h2>
-				</div>
+
+	
+				<div class= "brewery-headingc">
+						<h2>ZONE C</h2>
+						<p>Includes Lexington, Natural Bridge, and Rockbridge County</p>
+</div>
 				<div class="map-brewery-list-list">
 				 <?php 
 				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Lexington'): ?>
+				  <?php if (get_field('region') == 'Rockbridge County'): ?>
 				  		<div class="brewery-list-card">
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
@@ -159,197 +162,7 @@
 				  <?php 
 				  endwhile;
 				  wp_reset_postdata();
-				  ?>
-				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>McGaheysville</h2>
-				</div>
-				<div class="map-brewery-list-list">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
-					$loop = new WP_Query( $args);
-				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'McGaheysville'): ?>
-				  		<div class="brewery-list-card">
-				  			<div class="brewery-list-card-top" id="brewerieslist">
-						  		<?php   
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-								$thumb_url = $thumb_url_array[0]; 
-								?>
-								<?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	
-								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							</div>
-							<div class="brewery-list-card-link">
-								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
-							</div>
-						</div>
-						<?php endif; ?>
-				  <?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
-				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>Natural Bridge</h2>
-				</div>
-				<div class="map-brewery-list-list">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
-					$loop = new WP_Query( $args);
-				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Natural Bridge'): ?>
-				  		<div class="brewery-list-card">
-				  			<div class="brewery-list-card-top" id="brewerieslist">
-						  		<?php   
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-								$thumb_url = $thumb_url_array[0]; 
-								?>
-								<?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	
-								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							</div>
-							<div class="brewery-list-card-link">
-								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
-							</div>
-						</div>
-						<?php endif; ?>
-				  <?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
-				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>Raphine</h2>
-				</div>
-				<div class="map-brewery-list-list">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
-					$loop = new WP_Query( $args);
-				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Raphine'): ?>
-				  		<div class="brewery-list-card">
-				  			<div class="brewery-list-card-top" id="brewerieslist">
-						  		<?php   
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-								$thumb_url = $thumb_url_array[0]; 
-								?>
-								<?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	
-								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							</div>
-							<div class="brewery-list-card-link">
-								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
-							</div>
-						</div>
-						<?php endif; ?>
-				  <?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
-				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>Staunton</h2>
-				</div>
-				<div class="map-brewery-list-list">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
-					$loop = new WP_Query( $args);
-				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Staunton'): ?>
-				  		<div class="brewery-list-card">
-				  			<div class="brewery-list-card-top" id="brewerieslist">
-						  		<?php   
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-								$thumb_url = $thumb_url_array[0]; 
-								?>
-								<?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	
-								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							</div>
-							<div class="brewery-list-card-link">
-								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
-							</div>
-						</div>
-						<?php endif; ?>
-				  <?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
-				</div>
-				<hr>
-				<div class="brewery-heading">
-					<h2>Waynesboro</h2>
-				</div>
-				<div class="map-brewery-list-list">
-				 <?php 
-				 	$args = array( 'post_type' => 'brewery', 'posts_per_page'=>-1, 'orderby'=>'title', 'order'=>'ASC');
-					$loop = new WP_Query( $args);
-				  ?>
-				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('city') == 'Waynesboro'): ?>
-				  		<div class="brewery-list-card">
-				  			<div class="brewery-list-card-top" id="brewerieslist">
-						  		<?php   
-								$thumb_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-								$thumb_url = $thumb_url_array[0]; 
-								?>
-								<?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	
-								<p class="brewery-list-card-location"><i class="fas fa-map-marker-alt"></i> <?php the_field('city');?></p>				
-								<a href="<?php the_permalink() ?>"><p><?php the_title(); ?></p></a>
-							</div>
-							<div class="brewery-list-card-link">
-								<a href="<?php the_permalink() ?>">Learn More <i class="fas fa-chevron-right"></i></a>
-							</div>
-						</div>
-						<?php endif; ?>
-				  <?php 
-				  endwhile;
-				  wp_reset_postdata();
-				  ?>
+				  ?>			
 				</div>
     <?php endwhile; ?>
 <?php endif; ?>	

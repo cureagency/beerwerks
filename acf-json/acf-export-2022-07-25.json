@@ -549,9 +549,9 @@
                     "id": ""
                 },
                 "choices": {
-                    "Rockingham County": "Rockingham County",
-                    "Augusta County": "Augusta County",
-                    "Rockbridge County": "Rockbridge County"
+                    "Zone A": "Zone A",
+                    "Zone B": "Zone B",
+                    "Zone C": "Zone C"
                 },
                 "allow_null": 0,
                 "other_choice": 0,

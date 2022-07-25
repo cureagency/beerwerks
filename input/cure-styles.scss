@@ -48,7 +48,46 @@
 .acf-map img {
 	max-width: inherit !important;
  }
-
+ .region-a-marker{
+	color: $blue;
+ }
+ .region-b-marker{
+	color: $gold;
+ }
+ .region-c-marker{
+	color: $red;
+ }
+ .region-a-marker a{
+	color: $blue;
+ }
+ .region-b-marker a{
+	color: $gold;
+ }
+ .region-c-marker a{
+	color: $red;
+ }
+ .region-a-marker a:hover{
+	color: $blue;
+ }
+ .region-b-marker a:hover{
+	color: $gold;
+ }
+ .region-c-marker a:hover{
+	color: $red;
+ }
+ .region-label {
+	font-size: 12px !important;
+ }
+ #legend{
+	background-color: white;
+	padding: 1%;
+	margin-right: 2%;
+ }
+ #legend p{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+ }
 /*mobile*/
 @media only screen and (max-width: 1000px) {
 	.map-brewery-top {

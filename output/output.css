@@ -706,6 +706,58 @@ a.borderbutton-white:hover {
   max-width: inherit !important;
 }
 
+.region-a-marker {
+  color: #5F68A7;
+}
+
+.region-b-marker {
+  color: #bd8429;
+}
+
+.region-c-marker {
+  color: #983738;
+}
+
+.region-a-marker a {
+  color: #5F68A7;
+}
+
+.region-b-marker a {
+  color: #bd8429;
+}
+
+.region-c-marker a {
+  color: #983738;
+}
+
+.region-a-marker a:hover {
+  color: #5F68A7;
+}
+
+.region-b-marker a:hover {
+  color: #bd8429;
+}
+
+.region-c-marker a:hover {
+  color: #983738;
+}
+
+.region-label {
+  font-size: 12px !important;
+}
+
+#legend {
+  background-color: white;
+  padding: 1%;
+  margin-right: 2%;
+}
+
+#legend p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
 /*mobile*/
 @media only screen and (max-width: 1000px) {
   .map-brewery-top {
@@ -2896,6 +2948,58 @@ p.footer-header {
 
 .acf-map img {
   max-width: inherit !important;
+}
+
+.region-a-marker {
+  color: #5F68A7;
+}
+
+.region-b-marker {
+  color: #bd8429;
+}
+
+.region-c-marker {
+  color: #983738;
+}
+
+.region-a-marker a {
+  color: #5F68A7;
+}
+
+.region-b-marker a {
+  color: #bd8429;
+}
+
+.region-c-marker a {
+  color: #983738;
+}
+
+.region-a-marker a:hover {
+  color: #5F68A7;
+}
+
+.region-b-marker a:hover {
+  color: #bd8429;
+}
+
+.region-c-marker a:hover {
+  color: #983738;
+}
+
+.region-label {
+  font-size: 12px !important;
+}
+
+#legend {
+  background-color: white;
+  padding: 1%;
+  margin-right: 2%;
+}
+
+#legend p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 /*mobile*/

@@ -288,7 +288,7 @@
             paths:  rockbridgeCords,
             strokeColor: "983738",
             strokeOpacity: 0.8,
-            strokeWeight: 0,
+            strokeWeight: 0.2,
             fillColor: "#983738",
             fillOpacity: 0.2,
         });
@@ -316,7 +316,7 @@
                 paths: augustaCords,
                 strokeColor: "#D08E30",
                 strokeOpacity: 0.8,
-                strokeWeight: 0,
+                strokeWeight: 0.2,
                 fillColor: "#D08E30",
                 fillOpacity: 0.2,
             });
@@ -345,7 +345,7 @@
             paths: rockinghamCords,
             strokeColor: "#5F68A7",
             strokeOpacity: 0.8,
-            strokeWeight: 0,
+            strokeWeight: 0.2,
             fillColor: "#5F68A7",
             fillOpacity: 0.2,
         });
@@ -414,7 +414,7 @@
     //   };
 
         // Create marker instance.
-                var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/noun-map-pin-425483-BD8429.png";
+                var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/dark-grey-marker.png";
 
         var marker = new google.maps.Marker({
             position : latLng,

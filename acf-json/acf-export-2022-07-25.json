@@ -541,7 +541,7 @@
                 "name": "region",
                 "type": "radio",
                 "instructions": "",
-                "required": 0,
+                "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
                     "width": "",
@@ -554,11 +554,11 @@
                     "Zone C": "Zone C"
                 },
                 "allow_null": 0,
-                "other_choice": 0,
+                "other_choice": 1,
+                "save_other_choice": 1,
                 "default_value": "",
                 "layout": "vertical",
-                "return_format": "value",
-                "save_other_choice": 0
+                "return_format": "value"
             }
         ],
         "location": [

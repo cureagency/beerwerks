@@ -34,8 +34,8 @@
 						  <p class ="region-a-marker region-label"><a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a></p>
 						</div>	
 						<?php endif; ?>	
-						<?php if (get_field('region') == 'Zone B'): ?> 
-				  			<div class ="markerb" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						<?php if (get_field('region') == 'Zone B'):  ?> 
+				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 						  <p class = "region-b-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 						  <br/>
 						  <span class ="region-label"><a href="#zoneBanchor"><?php the_field('region'); ?></a></span></p>
@@ -43,8 +43,8 @@
 						  <p class ="region-b-marker region-label"><a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a></p>
 						</div>	
 						<?php endif; ?>	
-						<?php if (get_field('region') == 'Zone C'): ?> 
-				  			<div class ="markerc" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						<?php if (get_field('region') == 'Zone C'):  ?> 
+				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
 						  <p class = "region-c-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 						  <br/>
 						  <span class ="region-label"><a href="#zoneCanchor"><?php the_field('region'); ?></a></span></p>

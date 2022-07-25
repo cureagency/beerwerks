@@ -288,13 +288,20 @@
             paths:  rockbridgeCords,
             strokeColor: "983738",
             strokeOpacity: 0.8,
-            strokeWeight: 0.2,
+            strokeWeight: 0,
             fillColor: "#983738",
             fillOpacity: 0.2,
         });
         var map = new google.maps.Map( $el[0], mapArgs );
 
+
         rockbridgePolygon.setMap(map);
+
+        // var label = new google.maps.Marker({
+        //     position: new google.maps.LatLng(50,50),
+        //     map: map,
+        //     icon: "/images/mytextasanimage.png"
+        // });
 
         
           // Define the LatLng coordinates for the polygon's path.
@@ -316,12 +323,13 @@
                 paths: augustaCords,
                 strokeColor: "#D08E30",
                 strokeOpacity: 0.8,
-                strokeWeight: 0.2,
+                strokeWeight: 0,
                 fillColor: "#D08E30",
                 fillOpacity: 0.2,
             });
             
             augustaPolygon.setMap(map);
+        
 
             // Define the LatLng coordinates for the polygon's path.
             const rockinghamCords = [
@@ -345,21 +353,20 @@
             paths: rockinghamCords,
             strokeColor: "#5F68A7",
             strokeOpacity: 0.8,
-            strokeWeight: 0.2,
+            strokeWeight: 0,
             fillColor: "#5F68A7",
             fillOpacity: 0.2,
         });
         
         rockinghamPolygon.setMap(map);
 
-        //Add Legend.
         var legend = document.createElement('div');
         legend.id = 'legend';
         var content = [];
         content.push('<h3>LEGEND</h3><p> <span class = "region-a-marker"><a href="#zoneAanchor">Zone A</a></span><br/><span class = "region-b-marker"><a href="#zoneBanchor"></div>Zone B</a></span><br/><span class = "region-c-marker"><a href="#zoneCanchor"></div>Zone C</a></span></p>');
         legend.innerHTML = content.join('');
         legend.index = 1;
-        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
 
         // Add markers.
         map.markers = [];
@@ -397,6 +404,7 @@
             lng: parseFloat( lng )
         };
     
+
         // var pngGold = "http://beerwerks-test.local/wp-content/uploads/2022/07/noun-location-1807386-BD8429.png";
     //     var pngBlue = "http://beerwerks-test.local/wp-content/uploads/2022/07/noun-location-1807386-5F68A7.png";
     //     var pngRed = "http://beerwerks-test.local/wp-content/uploads/2022/07/noun-location-1807386-983738.png";
@@ -413,18 +421,56 @@
     //     },
     //   };
 
-        // Create marker instance.
-                var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/dark-grey-marker.png";
 
-        var marker = new google.maps.Marker({
-            position : latLng,
-            map,
-            icon: {
-                url: pngMarker,
-                scaledSize: new google.maps.Size(50, 50),
-            },
-        });
+        // Create marker instance.
+        //         var pngMarkera = "http://beerwerkstest2.local/wp-content/uploads/2022/07/blue-marker-border.png";
+
+        // var marker = new google.maps.Marker({
+        //     position : latLng,
+        //     map,
+        //     icon: {
+        //         url: pngMarkera,
+        //         scaledSize: new google.maps.Size(50, 50),
+        //     },
+        // });
     
+        //  // Create marker instance.
+        //  var pngMarkerb = "http://beerwerkstest2.local/wp-content/uploads/2022/07/gold-marker-border.png";
+
+        //  var markerb = new google.maps.Marker({
+        //      position : latLng,
+        //      map,
+        //      icon: {
+        //          url: pngMarkerb,
+        //          scaledSize: new google.maps.Size(50, 50),
+        //      },
+        //  });
+    
+        //   // Create marker instance.
+        //   var pngMarkerc = "http://beerwerkstest2.local/wp-content/uploads/2022/07/red-border-marker.png";
+
+        //   var markerc = new google.maps.Marker({
+        //       position : latLng,
+        //       map,
+        //       icon: {
+        //           url: pngMarkerc,
+        //           scaledSize: new google.maps.Size(50, 50),
+        //       },
+        //   });
+
+      
+                  // Create marker instance.
+          var pngMarker = "http://beerwerkstest2.local/wp-content/uploads/2022/07/dark-grey-marker.png";
+
+          var marker = new google.maps.Marker({
+              position : latLng,
+              map,
+              icon: {
+                  url: pngMarker,
+                  scaledSize: new google.maps.Size(50, 50),
+              },
+          });
+
         // for (let i = 0; i < features.length; i++) {
         //     const marker = new google.maps.Marker({
         //       position: features[i].position,
@@ -433,7 +479,7 @@
         //     });
         
         // Append to reference for later use.
-        map.markers.push( marker );
+        map.markers.push( marker);
     
         // If marker contains HTML, add it to an infoWindow.
         if( $marker.html() ){

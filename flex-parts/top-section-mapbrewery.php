@@ -21,13 +21,36 @@
 				 	<?php while ($query -> have_posts()) : $query -> the_post(); ?>
 				  	<?php	
 				  		$mapLocation = get_field('map_location');
+						$region = get_field('region');
 				  		if (!empty($mapLocation)): ?>
-						<?php $mapLocation = get_field('map_location');?>
-				  		<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-						  <p><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></p>
+					<?php $mapLocation = get_field('map_location');?>
+						<?php if (get_field('region') == 'Zone A'): ?> 
+				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						  <p class = "region-a-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+						  <br/>
+						  <span class ="region-label"><a href="#zoneAanchor"><?php the_field('region'); ?></a></span></p>
 						  <?php echo $mapLocation['address'] ?><br/>
-						  <a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a>
+						  <p class ="region-a-marker region-label"><a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a></p>
 						</div>	
+						<?php endif; ?>	
+						<?php if (get_field('region') == 'Zone B'): ?> 
+				  			<div class ="markerb" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						  <p class = "region-b-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+						  <br/>
+						  <span class ="region-label"><a href="#zoneBanchor"><?php the_field('region'); ?></a></span></p>
+						  <?php echo $mapLocation['address'] ?><br/>
+						  <p class ="region-b-marker region-label"><a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a></p>
+						</div>	
+						<?php endif; ?>	
+						<?php if (get_field('region') == 'Zone C'): ?> 
+				  			<div class ="markerc" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
+						  <p class = "region-c-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+						  <br/>
+						  <span class ="region-label"><a href="#zoneCanchor"><?php the_field('region'); ?></a></span></p>
+						  <?php echo $mapLocation['address'] ?><br/>
+						  <p class ="region-c-marker region-label"><a href="<?php the_permalink() ?>">Learn More</a> &nbsp; <a href="https://www.google.com/maps?saddr=My+Location&daddr=<?php echo $mapLocation['address']; ?>" target="_blank"><?php _e('Get Directions','yourtheme'); ?></a></p>
+						</div>	
+						<?php endif; ?>		
 					<?php endif; ?>			  
 					<?php 
 				  endwhile;
@@ -35,7 +58,8 @@
 				  ?>
 					<?php endwhile; ?>
 					<?php endif; ?>	
-</div>
+					
+				</div>
 </div>
 
 <div class="map-brewery-list-wrap">

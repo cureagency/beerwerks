@@ -6,7 +6,8 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 		<?php endwhile; ?>
-		<?php endif; ?>					
+		<?php endif; ?>	
+				
 </div>
 </div>
 
@@ -60,8 +61,8 @@
 					<?php endif; ?>	
 					
 				</div>
-</div>
 
+</div>
 <div class="map-brewery-list-wrap">
 <?php if( have_rows('brewery_list') ): ?>
     <?php while( have_rows('brewery_list') ): the_row(); 
@@ -70,7 +71,7 @@
 					<?php the_sub_field('text'); ?>
 				</div>	
 
-				<div class= "brewery-headinga">
+				<div class= "brewery-headinga" id ="zoneAanchor">
 						<h2>ZONE A</h2>
 						<p>Includes Harrisonburg, Elkton, and Rockingham County</p>
 </div>
@@ -80,8 +81,8 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('region') == 'Rockingham County'): ?>
-				  		<div class="brewery-list-card">
+				  <?php if (get_field('region') == 'Zone A'): ?>
+				  		<div class="brewery-list-card" >
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
 								$thumb_id = get_post_thumbnail_id();
@@ -110,7 +111,7 @@
 				  ?>
 				</div>
 
-				<div class= "brewery-headingb">
+				<div class= "brewery-headingb" id ="zoneBanchor">
 						<h2>ZONE B</h2>
 						<p>Includes Waynesboro, Staunton, and Augusta County</p>
 </div>
@@ -120,8 +121,8 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('region') == 'Augusta County'): ?>
-				  		<div class="brewery-list-card">
+				  <?php if (get_field('region') == 'Zone B'): ?>
+				  		<div class="brewery-list-card" >
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
 								$thumb_id = get_post_thumbnail_id();
@@ -150,7 +151,7 @@
 				</div>
 
 	
-				<div class= "brewery-headingc">
+				<div class= "brewery-headingc" id ="zoneCanchor">
 						<h2>ZONE C</h2>
 						<p>Includes Lexington, Natural Bridge, and Rockbridge County</p>
 </div>
@@ -160,8 +161,8 @@
 					$loop = new WP_Query( $args);
 				  ?>
 				  <?php while ($loop -> have_posts()) : $loop -> the_post(); ?>
-				  <?php if (get_field('region') == 'Rockbridge County'): ?>
-				  		<div class="brewery-list-card">
+				  <?php if (get_field('region') == 'Zone C'): ?>
+				  		<div class="brewery-list-card" >
 				  			<div class="brewery-list-card-top" id="brewerieslist">
 						  		<?php   
 								$thumb_id = get_post_thumbnail_id();

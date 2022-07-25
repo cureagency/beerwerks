@@ -352,6 +352,14 @@
         
         rockinghamPolygon.setMap(map);
 
+        //Add Legend.
+        var legend = document.createElement('div');
+        legend.id = 'legend';
+        var content = [];
+        content.push('<h3>LEGEND</h3><p> <span class = "region-a-marker"><a href="#zoneAanchor">Zone A</a></span><br/><span class = "region-b-marker"><a href="#zoneBanchor"></div>Zone B</a></span><br/><span class = "region-c-marker"><a href="#zoneCanchor"></div>Zone C</a></span></p>');
+        legend.innerHTML = content.join('');
+        legend.index = 1;
+        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
 
         // Add markers.
         map.markers = [];

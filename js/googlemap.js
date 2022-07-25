@@ -460,7 +460,7 @@
 
       
                   // Create marker instance.
-          var pngMarker = "http://beerwerkstest2.local/wp-content/uploads/2022/07/dark-grey-marker.png";
+          var pngMarker = "https://beerwerkstrail.com/wp-content/uploads/2022/07/dark-grey-marker.png";
 
           var marker = new google.maps.Marker({
               position : latLng,

@@ -42,14 +42,7 @@
 						</div>	
 						<?php endif; ?>	
 						<?php if (get_field('region') == 'Zone B'):  ?> 
-				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-							  <div class ="logomarker"> <?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	</div>		
+				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">	
 						<p class = "region-b-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 						  <br/>
 						  <span class ="region-label"><a href="#zoneBanchor"><?php the_field('region'); ?></a></span></p>
@@ -59,13 +52,6 @@
 						<?php endif; ?>	
 						<?php if (get_field('region') == 'Zone C'):  ?> 
 				  			<div class ="marker" data-lat="<?php echo $mapLocation['lat'] ?>" data-lng="<?php echo $mapLocation['lng'] ?>">
-							  <div class ="logomarker"> <?php 
-								$image = get_field('logo');
-								if( !empty( $image ) ): ?>
-									<div class="single-brewery-logo-wrap">
-								    	<img class="single-brewery-logo" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-								    </div>
-								<?php endif; ?>	</div>		
 						<p class = "region-c-marker"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 						  <br/>
 						  <span class ="region-label"><a href="#zoneCanchor"><?php the_field('region'); ?></a></span></p>
